@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SeleccionarTaxas">
+        <s:complexType />
+      </s:element>
+      <s:element name="SeleccionarTaxasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SeleccionarTaxasResult" type="tns:ArrayOfTaxa" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTaxa">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="taxa" nillable="true" type="tns:taxa" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="taxa">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="especies" type="tns:ArrayOfEspecie" />
+          <s:element minOccurs="0" maxOccurs="1" name="multimedias" type="tns:ArrayOfMultimedia" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombrecomuns" type="tns:ArrayOfNombrecomun" />
+          <s:element minOccurs="0" maxOccurs="1" name="taxapublicacions" type="tns:ArrayOfTaxapublicacion" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdTaxa" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NombreCorto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EnEcuador" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Endemica" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdTaxaPadre" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdCatalogo" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="PublicarEnWeb" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaModificacion" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UsuarioModificacion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdPublicacionReporte" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Ano" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfEspecie">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="especie" nillable="true" type="tns:especie" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="especie">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdEspecie" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdTaxa" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Etimologia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Taxonomia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HabitatBiologia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dieta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reproduccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InformacionAdicional" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ComentarioEstatusPoblacional" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Distribucion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DistribucionGlobal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObservacionZonaAltitudinal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RangoAltitudinal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenciaAreaProtegida" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Compilador" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaCompilacion" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="AutoriaCompilador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Editor" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaEdicion" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="AutoriaEditor" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaActualizacion" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Agradecimiento" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaModificacion" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UsuarioModificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Categoria" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMultimedia">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="multimedia" nillable="true" type="tns:multimedia" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="multimedia">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdMultimedia" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Titulo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NombreArchivo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdTaxa" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdTipo" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Principal" nillable="true" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Descarga" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdCatalogo" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="EnlaceExterno" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Borrado" nillable="true" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaModificacion" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UsuarioModificacion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Fecha" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="FuenteBibliografica" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Duracion_ms" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaInicial_KHz" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaMaxima_KHz" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaFinal_KHz" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaMinima_KHz" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaPuntoInflexion_KHz" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaMaximaEnergia_KHz" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AnchoBanda_KHz" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Software" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Grabadora" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Detector" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SituacionGrabacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Responsable" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DuracionMinima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DuracionMaxima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaInicialMinima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaInicialMaxima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaMaximaMinima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaMaximaMaxima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaFinalMinima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaFinalMaxima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaMinimaMinima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaMinimaMaxima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaPuntoInflexionMinima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaPuntoInflexionMaxima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaCaracteristica" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaCaracteristicaMinima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaCaracteristicaMaxima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaMaximaEnergiaMinima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrecuenciaMaximaEnergiaMaxima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AnchoBandaMinima" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AnchoBandaMaxima" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfNombrecomun">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="nombrecomun" nillable="true" type="tns:nombrecomun" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="nombrecomun">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdNombreComun" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdTaxa" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comentario" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Principal" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Orden" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdPublicacion" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Borrado" nillable="true" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaModificacion" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UsuarioModificacion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTaxapublicacion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="taxapublicacion" nillable="true" type="tns:taxapublicacion" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="taxapublicacion">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdTaxaPublicacion" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdTaxa" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdPublicacion" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Principal" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Borrado" nillable="true" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaModificacion" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UsuarioModificacion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SeleccionarTaxaPorId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTaxa" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SeleccionarTaxaPorIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SeleccionarTaxaPorIdResult" type="tns:taxa" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SeleccionarTaxaEspeciePorId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTaxa" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SeleccionarTaxaEspeciePorIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SeleccionarTaxaEspeciePorIdResult" type="tns:taxaespecie" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="taxaespecie">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdTaxa" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HabitatBiologia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ComentarioEstatusPoblacional" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="parametro" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamenResult" type="tns:ArrayOfTaxapublica" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTaxapublica">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="taxapublica" nillable="true" type="tns:taxapublica" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="taxapublica">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdTaxa" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdPublicacion" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Titulo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TituloSecundario" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Editor" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Editorial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Volumen" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Numero" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cita" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="seleccionarFotoPrincipalPorIdTaxaExamen">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="parametro" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="seleccionarFotoPrincipalPorIdTaxaExamenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="seleccionarFotoPrincipalPorIdTaxaExamenResult" type="tns:taxacatalogo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="taxacatalogo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdTaxa" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NombreArchivo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DescrpcionC" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="seleccionarTaxasEspeciesAnfibiosExamen">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="parametro" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="opcion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="seleccionarTaxasEspeciesAnfibiosExamenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="seleccionarTaxasEspeciesAnfibiosExamenResult" type="tns:ArrayOfTaxaamphibia" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTaxaamphibia">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="taxaamphibia" nillable="true" type="tns:taxaamphibia" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="taxaamphibia">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdTaxa" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdAmphibia" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sinonimia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="seleccionarTaxaMultimediaPorId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idtaxa" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="seleccionarTaxaMultimediaPorIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="seleccionarTaxaMultimediaPorIdResult" type="tns:taxamultimedia" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="taxamultimedia">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdMultimedia" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Titulo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NombreArchivo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdTaxa" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaModificacion" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UsuarioModificacion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="insertarTaxa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nuevaTaxa" type="tns:taxa" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertarTaxaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertarTaxaResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarTaxa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="taxaModificada" type="tns:taxa" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarTaxaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="actualizarTaxaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarTaxa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="taxaEliminado" type="tns:taxa" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarTaxaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="eliminarTaxaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SeleccionarTaxasSoapIn">
+    <wsdl:part name="parameters" element="tns:SeleccionarTaxas" />
+  </wsdl:message>
+  <wsdl:message name="SeleccionarTaxasSoapOut">
+    <wsdl:part name="parameters" element="tns:SeleccionarTaxasResponse" />
+  </wsdl:message>
+  <wsdl:message name="SeleccionarTaxaPorIdSoapIn">
+    <wsdl:part name="parameters" element="tns:SeleccionarTaxaPorId" />
+  </wsdl:message>
+  <wsdl:message name="SeleccionarTaxaPorIdSoapOut">
+    <wsdl:part name="parameters" element="tns:SeleccionarTaxaPorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="SeleccionarTaxaEspeciePorIdSoapIn">
+    <wsdl:part name="parameters" element="tns:SeleccionarTaxaEspeciePorId" />
+  </wsdl:message>
+  <wsdl:message name="SeleccionarTaxaEspeciePorIdSoapOut">
+    <wsdl:part name="parameters" element="tns:SeleccionarTaxaEspeciePorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamenSoapIn">
+    <wsdl:part name="parameters" element="tns:seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen" />
+  </wsdl:message>
+  <wsdl:message name="seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamenSoapOut">
+    <wsdl:part name="parameters" element="tns:seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamenResponse" />
+  </wsdl:message>
+  <wsdl:message name="seleccionarFotoPrincipalPorIdTaxaExamenSoapIn">
+    <wsdl:part name="parameters" element="tns:seleccionarFotoPrincipalPorIdTaxaExamen" />
+  </wsdl:message>
+  <wsdl:message name="seleccionarFotoPrincipalPorIdTaxaExamenSoapOut">
+    <wsdl:part name="parameters" element="tns:seleccionarFotoPrincipalPorIdTaxaExamenResponse" />
+  </wsdl:message>
+  <wsdl:message name="seleccionarTaxasEspeciesAnfibiosExamenSoapIn">
+    <wsdl:part name="parameters" element="tns:seleccionarTaxasEspeciesAnfibiosExamen" />
+  </wsdl:message>
+  <wsdl:message name="seleccionarTaxasEspeciesAnfibiosExamenSoapOut">
+    <wsdl:part name="parameters" element="tns:seleccionarTaxasEspeciesAnfibiosExamenResponse" />
+  </wsdl:message>
+  <wsdl:message name="seleccionarTaxaMultimediaPorIdSoapIn">
+    <wsdl:part name="parameters" element="tns:seleccionarTaxaMultimediaPorId" />
+  </wsdl:message>
+  <wsdl:message name="seleccionarTaxaMultimediaPorIdSoapOut">
+    <wsdl:part name="parameters" element="tns:seleccionarTaxaMultimediaPorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertarTaxaSoapIn">
+    <wsdl:part name="parameters" element="tns:insertarTaxa" />
+  </wsdl:message>
+  <wsdl:message name="insertarTaxaSoapOut">
+    <wsdl:part name="parameters" element="tns:insertarTaxaResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualizarTaxaSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizarTaxa" />
+  </wsdl:message>
+  <wsdl:message name="actualizarTaxaSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizarTaxaResponse" />
+  </wsdl:message>
+  <wsdl:message name="eliminarTaxaSoapIn">
+    <wsdl:part name="parameters" element="tns:eliminarTaxa" />
+  </wsdl:message>
+  <wsdl:message name="eliminarTaxaSoapOut">
+    <wsdl:part name="parameters" element="tns:eliminarTaxaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SOAPSoap">
+    <wsdl:operation name="SeleccionarTaxas">
+      <wsdl:input message="tns:SeleccionarTaxasSoapIn" />
+      <wsdl:output message="tns:SeleccionarTaxasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SeleccionarTaxaPorId">
+      <wsdl:input message="tns:SeleccionarTaxaPorIdSoapIn" />
+      <wsdl:output message="tns:SeleccionarTaxaPorIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SeleccionarTaxaEspeciePorId">
+      <wsdl:input message="tns:SeleccionarTaxaEspeciePorIdSoapIn" />
+      <wsdl:output message="tns:SeleccionarTaxaEspeciePorIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen">
+      <wsdl:input message="tns:seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamenSoapIn" />
+      <wsdl:output message="tns:seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarFotoPrincipalPorIdTaxaExamen">
+      <wsdl:input message="tns:seleccionarFotoPrincipalPorIdTaxaExamenSoapIn" />
+      <wsdl:output message="tns:seleccionarFotoPrincipalPorIdTaxaExamenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarTaxasEspeciesAnfibiosExamen">
+      <wsdl:input message="tns:seleccionarTaxasEspeciesAnfibiosExamenSoapIn" />
+      <wsdl:output message="tns:seleccionarTaxasEspeciesAnfibiosExamenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarTaxaMultimediaPorId">
+      <wsdl:input message="tns:seleccionarTaxaMultimediaPorIdSoapIn" />
+      <wsdl:output message="tns:seleccionarTaxaMultimediaPorIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarTaxa">
+      <wsdl:input message="tns:insertarTaxaSoapIn" />
+      <wsdl:output message="tns:insertarTaxaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizarTaxa">
+      <wsdl:input message="tns:actualizarTaxaSoapIn" />
+      <wsdl:output message="tns:actualizarTaxaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarTaxa">
+      <wsdl:input message="tns:eliminarTaxaSoapIn" />
+      <wsdl:output message="tns:eliminarTaxaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SOAPSoap" type="tns:SOAPSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SeleccionarTaxas">
+      <soap:operation soapAction="http://tempuri.org/SeleccionarTaxas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeleccionarTaxaPorId">
+      <soap:operation soapAction="http://tempuri.org/SeleccionarTaxaPorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeleccionarTaxaEspeciePorId">
+      <soap:operation soapAction="http://tempuri.org/SeleccionarTaxaEspeciePorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen">
+      <soap:operation soapAction="http://tempuri.org/seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarFotoPrincipalPorIdTaxaExamen">
+      <soap:operation soapAction="http://tempuri.org/seleccionarFotoPrincipalPorIdTaxaExamen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarTaxasEspeciesAnfibiosExamen">
+      <soap:operation soapAction="http://tempuri.org/seleccionarTaxasEspeciesAnfibiosExamen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarTaxaMultimediaPorId">
+      <soap:operation soapAction="http://tempuri.org/seleccionarTaxaMultimediaPorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarTaxa">
+      <soap:operation soapAction="http://tempuri.org/insertarTaxa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarTaxa">
+      <soap:operation soapAction="http://tempuri.org/actualizarTaxa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarTaxa">
+      <soap:operation soapAction="http://tempuri.org/eliminarTaxa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SOAPSoap12" type="tns:SOAPSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SeleccionarTaxas">
+      <soap12:operation soapAction="http://tempuri.org/SeleccionarTaxas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeleccionarTaxaPorId">
+      <soap12:operation soapAction="http://tempuri.org/SeleccionarTaxaPorId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeleccionarTaxaEspeciePorId">
+      <soap12:operation soapAction="http://tempuri.org/SeleccionarTaxaEspeciePorId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen">
+      <soap12:operation soapAction="http://tempuri.org/seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarFotoPrincipalPorIdTaxaExamen">
+      <soap12:operation soapAction="http://tempuri.org/seleccionarFotoPrincipalPorIdTaxaExamen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarTaxasEspeciesAnfibiosExamen">
+      <soap12:operation soapAction="http://tempuri.org/seleccionarTaxasEspeciesAnfibiosExamen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarTaxaMultimediaPorId">
+      <soap12:operation soapAction="http://tempuri.org/seleccionarTaxaMultimediaPorId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarTaxa">
+      <soap12:operation soapAction="http://tempuri.org/insertarTaxa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarTaxa">
+      <soap12:operation soapAction="http://tempuri.org/actualizarTaxa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarTaxa">
+      <soap12:operation soapAction="http://tempuri.org/eliminarTaxa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SOAP">
+    <wsdl:port name="SOAPSoap" binding="tns:SOAPSoap">
+      <soap:address location="http://localhost:38594/SOAP.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SOAPSoap12" binding="tns:SOAPSoap12">
+      <soap12:address location="http://localhost:38594/SOAP.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

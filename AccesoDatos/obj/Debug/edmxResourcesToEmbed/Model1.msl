@@ -1,0 +1,1043 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BiologiaBdRelacionesModelStoreContainer" CdmEntityContainer="BiologiaBdRelacionesEntities">
+    <EntitySetMapping Name="amphibias">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.amphibia">
+        <MappingFragment StoreEntitySet="amphibia">
+          <ScalarProperty Name="IdAmphibia" ColumnName="IdAmphibia" />
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="Sinonimia" ColumnName="Sinonimia" />
+          <ScalarProperty Name="Identificacion" ColumnName="Identificacion" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="ColorEnVida" ColumnName="ColorEnVida" />
+          <ScalarProperty Name="Diagnosis" ColumnName="Diagnosis" />
+          <ScalarProperty Name="Morfometria" ColumnName="Morfometria" />
+          <ScalarProperty Name="SVLMacho" ColumnName="SVLMacho" />
+          <ScalarProperty Name="ReferenciaSVLMacho" ColumnName="ReferenciaSVLMacho" />
+          <ScalarProperty Name="SVLHembra" ColumnName="SVLHembra" />
+          <ScalarProperty Name="ReferenciaSVLHembra" ColumnName="ReferenciaSVLHembra" />
+          <ScalarProperty Name="Comportamiento" ColumnName="Comportamiento" />
+          <ScalarProperty Name="Larva" ColumnName="Larva" />
+          <ScalarProperty Name="Canto" ColumnName="Canto" />
+          <ScalarProperty Name="ColorEnPreservacion" ColumnName="ColorEnPreservacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="autors">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.autor">
+        <MappingFragment StoreEntitySet="autor">
+          <ScalarProperty Name="IdAutor" ColumnName="IdAutor" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="EnlaceBiografia" ColumnName="EnlaceBiografia" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="autorbiografias">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.autorbiografia">
+        <MappingFragment StoreEntitySet="autorbiografia">
+          <ScalarProperty Name="IdAutorBiografia" ColumnName="IdAutorBiografia" />
+          <ScalarProperty Name="IdAutor" ColumnName="IdAutor" />
+          <ScalarProperty Name="IdBiografia" ColumnName="IdBiografia" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aves">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.ave">
+        <MappingFragment StoreEntitySet="aves">
+          <ScalarProperty Name="IdAves" ColumnName="IdAves" />
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="Identificacion" ColumnName="Identificacion" />
+          <ScalarProperty Name="CasiEndemica" ColumnName="CasiEndemica" />
+          <ScalarProperty Name="TaxonomiaRidgelyGreenfield" ColumnName="TaxonomiaRidgelyGreenfield" />
+          <ScalarProperty Name="ComentarioTaxonomia" ColumnName="ComentarioTaxonomia" />
+          <ScalarProperty Name="Movimiento" ColumnName="Movimiento" />
+          <ScalarProperty Name="DistribucionSubespecies" ColumnName="DistribucionSubespecies" />
+          <ScalarProperty Name="NotaPresenciaProvincia" ColumnName="NotaPresenciaProvincia" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="biografias">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.biografia">
+        <MappingFragment StoreEntitySet="biografia">
+          <ScalarProperty Name="IdBiografia" ColumnName="IdBiografia" />
+          <ScalarProperty Name="AnoNacimiento" ColumnName="AnoNacimiento" />
+          <ScalarProperty Name="LugarNacimiento" ColumnName="LugarNacimiento" />
+          <ScalarProperty Name="InicioInteresEstudio" ColumnName="InicioInteresEstudio" />
+          <ScalarProperty Name="TitulosAcademicos" ColumnName="TitulosAcademicos" />
+          <ScalarProperty Name="InteresInvestigacion" ColumnName="InteresInvestigacion" />
+          <ScalarProperty Name="ExperienciaLaboral" ColumnName="ExperienciaLaboral" />
+          <ScalarProperty Name="PosicionActual" ColumnName="PosicionActual" />
+          <ScalarProperty Name="AsociacionesProfesionales" ColumnName="AsociacionesProfesionales" />
+          <ScalarProperty Name="PremiosReconocimientos" ColumnName="PremiosReconocimientos" />
+          <ScalarProperty Name="CorreoElectronico" ColumnName="CorreoElectronico" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="catalogoes">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.catalogo">
+        <MappingFragment StoreEntitySet="catalogo">
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Sigla" ColumnName="Sigla" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="IdTipoCatalogo" ColumnName="IdTipoCatalogo" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ColaReportes">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.ColaReporte">
+        <MappingFragment StoreEntitySet="ColaReporte">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="HoraPeticion" ColumnName="HoraPeticion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="IdCatalogo1" ColumnName="IdCatalogo1" />
+          <ScalarProperty Name="IdCatalogo2" ColumnName="IdCatalogo2" />
+          <ScalarProperty Name="IdCatalogo3" ColumnName="IdCatalogo3" />
+          <ScalarProperty Name="IdCatalogo4" ColumnName="IdCatalogo4" />
+          <ScalarProperty Name="IdCatalogo5" ColumnName="IdCatalogo5" />
+          <ScalarProperty Name="IdCatalogo6" ColumnName="IdCatalogo6" />
+          <ScalarProperty Name="IdCatalogo7" ColumnName="IdCatalogo7" />
+          <ScalarProperty Name="IdCatalogo8" ColumnName="IdCatalogo8" />
+          <ScalarProperty Name="IdTaxaOrden" ColumnName="IdTaxaOrden" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="NombreTaxaGenero" ColumnName="NombreTaxaGenero" />
+          <ScalarProperty Name="NombreTaxaEspecie" ColumnName="NombreTaxaEspecie" />
+          <ScalarProperty Name="NombreComunP" ColumnName="NombreComunP" />
+          <ScalarProperty Name="NombreAutor" ColumnName="NombreAutor" />
+          <ScalarProperty Name="AnioPublicacion" ColumnName="AnioPublicacion" />
+          <ScalarProperty Name="AutoriaEditor" ColumnName="AutoriaEditor" />
+          <ScalarProperty Name="Endemica" ColumnName="Endemica" />
+          <ScalarProperty Name="numeroRegistros" ColumnName="numeroRegistros" />
+          <ScalarProperty Name="rutaSalida" ColumnName="rutaSalida" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="NombreVisitante" ColumnName="NombreVisitante" />
+          <ScalarProperty Name="InstitucionVisitante" ColumnName="InstitucionVisitante" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="RutaDescarga" ColumnName="RutaDescarga" />
+          <ScalarProperty Name="TipoReporte" ColumnName="TipoReporte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="divisiongeopoliticas">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.divisiongeopolitica">
+        <MappingFragment StoreEntitySet="divisiongeopolitica">
+          <ScalarProperty Name="IdDivisionGeopolitica" ColumnName="IdDivisionGeopolitica" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdDivisionGeopoliticaPadre" ColumnName="IdDivisionGeopoliticaPadre" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="divisiongeopoliticacatalogoaps">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.divisiongeopoliticacatalogoap">
+        <MappingFragment StoreEntitySet="divisiongeopoliticacatalogoap">
+          <ScalarProperty Name="IdDivisionGeopoliticaCatalogoAP" ColumnName="IdDivisionGeopoliticaCatalogoAP" />
+          <ScalarProperty Name="IdDivisionGeopolitica" ColumnName="IdDivisionGeopolitica" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="enlacerelacionadoes">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.enlacerelacionado">
+        <MappingFragment StoreEntitySet="enlacerelacionado">
+          <ScalarProperty Name="IdEnlaceRelacionado" ColumnName="IdEnlaceRelacionado" />
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="Enlace" ColumnName="Enlace" />
+          <ScalarProperty Name="TextoEnlace" ColumnName="TextoEnlace" />
+          <ScalarProperty Name="Borrado" ColumnName="Borrado" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="especies">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.especie">
+        <MappingFragment StoreEntitySet="especie">
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="Etimologia" ColumnName="Etimologia" />
+          <ScalarProperty Name="Taxonomia" ColumnName="Taxonomia" />
+          <ScalarProperty Name="HabitatBiologia" ColumnName="HabitatBiologia" />
+          <ScalarProperty Name="Dieta" ColumnName="Dieta" />
+          <ScalarProperty Name="Reproduccion" ColumnName="Reproduccion" />
+          <ScalarProperty Name="InformacionAdicional" ColumnName="InformacionAdicional" />
+          <ScalarProperty Name="ComentarioEstatusPoblacional" ColumnName="ComentarioEstatusPoblacional" />
+          <ScalarProperty Name="Distribucion" ColumnName="Distribucion" />
+          <ScalarProperty Name="DistribucionGlobal" ColumnName="DistribucionGlobal" />
+          <ScalarProperty Name="ObservacionZonaAltitudinal" ColumnName="ObservacionZonaAltitudinal" />
+          <ScalarProperty Name="RangoAltitudinal" ColumnName="RangoAltitudinal" />
+          <ScalarProperty Name="ReferenciaAreaProtegida" ColumnName="ReferenciaAreaProtegida" />
+          <ScalarProperty Name="Compilador" ColumnName="Compilador" />
+          <ScalarProperty Name="FechaCompilacion" ColumnName="FechaCompilacion" />
+          <ScalarProperty Name="AutoriaCompilador" ColumnName="AutoriaCompilador" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+          <ScalarProperty Name="FechaEdicion" ColumnName="FechaEdicion" />
+          <ScalarProperty Name="AutoriaEditor" ColumnName="AutoriaEditor" />
+          <ScalarProperty Name="FechaActualizacion" ColumnName="FechaActualizacion" />
+          <ScalarProperty Name="Agradecimiento" ColumnName="Agradecimiento" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="especiecatalogoes">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.especiecatalogo">
+        <MappingFragment StoreEntitySet="especiecatalogo">
+          <ScalarProperty Name="IdEspecieCatalogo" ColumnName="IdEspecieCatalogo" />
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="Borrado" ColumnName="Borrado" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="Criterio" ColumnName="Criterio" />
+          <ScalarProperty Name="PublicacionListaRoja" ColumnName="PublicacionListaRoja" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="especielocalidads">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.especielocalidad">
+        <MappingFragment StoreEntitySet="especielocalidad">
+          <ScalarProperty Name="IdEspecieLocalidad" ColumnName="IdEspecieLocalidad" />
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="IdLocalidad" ColumnName="IdLocalidad" />
+          <ScalarProperty Name="Principal" ColumnName="Principal" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="especimen">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.especiman">
+        <MappingFragment StoreEntitySet="especimen">
+          <ScalarProperty Name="IdEspecimen" ColumnName="IdEspecimen" />
+          <ScalarProperty Name="Qcaz" ColumnName="Qcaz" />
+          <ScalarProperty Name="SC" ColumnName="SC" />
+          <ScalarProperty Name="IdTaxaWeb" ColumnName="IdTaxaWeb" />
+          <ScalarProperty Name="Orden" ColumnName="Orden" />
+          <ScalarProperty Name="Familia" ColumnName="Familia" />
+          <ScalarProperty Name="Genero" ColumnName="Genero" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="TaxaCuestion" ColumnName="TaxaCuestion" />
+          <ScalarProperty Name="AnoColeccion" ColumnName="AnoColeccion" />
+          <ScalarProperty Name="Pais" ColumnName="Pais" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+          <ScalarProperty Name="LatGeo" ColumnName="LatGeo" />
+          <ScalarProperty Name="LonGeo" ColumnName="LonGeo" />
+          <ScalarProperty Name="Tejidos" ColumnName="Tejidos" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="FuenteCoordenadas" ColumnName="FuenteCoordenadas" />
+          <ScalarProperty Name="QcazSN" ColumnName="QcazSN" />
+          <ScalarProperty Name="FuenteRegistro" ColumnName="FuenteRegistro" />
+          <ScalarProperty Name="IdPublicacion" ColumnName="IdPublicacion" />
+          <ScalarProperty Name="ObservacionesGeoreferenciacion" ColumnName="ObservacionesGeoreferenciacion" />
+          <ScalarProperty Name="ObservacionesGenerales" ColumnName="ObservacionesGenerales" />
+          <ScalarProperty Name="Nueva" ColumnName="Nueva" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImagenEspecimen">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.ImagenEspeciman">
+        <MappingFragment StoreEntitySet="ImagenEspecimen">
+          <ScalarProperty Name="IdImagenEspecimen" ColumnName="IdImagenEspecimen" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="NombreArchivo" ColumnName="NombreArchivo" />
+          <ScalarProperty Name="IdEspecimen" ColumnName="IdEspecimen" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="localidads">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.localidad">
+        <MappingFragment StoreEntitySet="localidad">
+          <ScalarProperty Name="IdLocalidad" ColumnName="IdLocalidad" />
+          <ScalarProperty Name="IdDivisionGeopolitica" ColumnName="IdDivisionGeopolitica" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NombreVerbatim" ColumnName="NombreVerbatim" />
+          <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+          <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+          <ScalarProperty Name="UtmN" ColumnName="UtmN" />
+          <ScalarProperty Name="UtmE" ColumnName="UtmE" />
+          <ScalarProperty Name="Altura" ColumnName="Altura" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="ErrorMaximaDistancia" ColumnName="ErrorMaximaDistancia" />
+          <ScalarProperty Name="FechaUltimoCambio" ColumnName="FechaUltimoCambio" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="localidadcatalogoes">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.localidadcatalogo">
+        <MappingFragment StoreEntitySet="localidadcatalogo">
+          <ScalarProperty Name="IdLocalidadCatalogo" ColumnName="IdLocalidadCatalogo" />
+          <ScalarProperty Name="IdLocalidad" ColumnName="IdLocalidad" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mammalias">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.mammalia">
+        <MappingFragment StoreEntitySet="mammalia">
+          <ScalarProperty Name="IdMammalia" ColumnName="IdMammalia" />
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Diagnosis" ColumnName="Diagnosis" />
+          <ScalarProperty Name="Morfometria" ColumnName="Morfometria" />
+          <ScalarProperty Name="Movimientos" ColumnName="Movimientos" />
+          <ScalarProperty Name="ListaRojaCriterios" ColumnName="ListaRojaCriterios" />
+          <ScalarProperty Name="Sinonimia" ColumnName="Sinonimia" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MENUs">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.MENU">
+        <MappingFragment StoreEntitySet="MENU">
+          <ScalarProperty Name="IDMENU" ColumnName="IDMENU" />
+          <ScalarProperty Name="NOMBREMENU" ColumnName="NOMBREMENU" />
+          <ScalarProperty Name="FECHAMODIFICACION" ColumnName="FECHAMODIFICACION" />
+          <ScalarProperty Name="USUARIOMODIFICACION" ColumnName="USUARIOMODIFICACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="multimedias">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.multimedia">
+        <MappingFragment StoreEntitySet="multimedia">
+          <ScalarProperty Name="IdMultimedia" ColumnName="IdMultimedia" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="NombreArchivo" ColumnName="NombreArchivo" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="IdTipo" ColumnName="IdTipo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Principal" ColumnName="Principal" />
+          <ScalarProperty Name="Descarga" ColumnName="Descarga" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="EnlaceExterno" ColumnName="EnlaceExterno" />
+          <ScalarProperty Name="Borrado" ColumnName="Borrado" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="FuenteBibliografica" ColumnName="FuenteBibliografica" />
+          <ScalarProperty Name="Duracion_ms" ColumnName="Duracion_ms" />
+          <ScalarProperty Name="FrecuenciaInicial_KHz" ColumnName="FrecuenciaInicial_KHz" />
+          <ScalarProperty Name="FrecuenciaMaxima_KHz" ColumnName="FrecuenciaMaxima_KHz" />
+          <ScalarProperty Name="FrecuenciaFinal_KHz" ColumnName="FrecuenciaFinal_KHz" />
+          <ScalarProperty Name="FrecuenciaMinima_KHz" ColumnName="FrecuenciaMinima_KHz" />
+          <ScalarProperty Name="FrecuenciaPuntoInflexion_KHz" ColumnName="FrecuenciaPuntoInflexion_KHz" />
+          <ScalarProperty Name="FrecuenciaMaximaEnergia_KHz" ColumnName="FrecuenciaMaximaEnergia_KHz" />
+          <ScalarProperty Name="AnchoBanda_KHz" ColumnName="AnchoBanda_KHz" />
+          <ScalarProperty Name="Software" ColumnName="Software" />
+          <ScalarProperty Name="Grabadora" ColumnName="Grabadora" />
+          <ScalarProperty Name="Detector" ColumnName="Detector" />
+          <ScalarProperty Name="SituacionGrabacion" ColumnName="SituacionGrabacion" />
+          <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+          <ScalarProperty Name="DuracionMinima" ColumnName="DuracionMinima" />
+          <ScalarProperty Name="DuracionMaxima" ColumnName="DuracionMaxima" />
+          <ScalarProperty Name="FrecuenciaInicialMinima" ColumnName="FrecuenciaInicialMinima" />
+          <ScalarProperty Name="FrecuenciaInicialMaxima" ColumnName="FrecuenciaInicialMaxima" />
+          <ScalarProperty Name="FrecuenciaMaximaMinima" ColumnName="FrecuenciaMaximaMinima" />
+          <ScalarProperty Name="FrecuenciaMaximaMaxima" ColumnName="FrecuenciaMaximaMaxima" />
+          <ScalarProperty Name="FrecuenciaFinalMinima" ColumnName="FrecuenciaFinalMinima" />
+          <ScalarProperty Name="FrecuenciaFinalMaxima" ColumnName="FrecuenciaFinalMaxima" />
+          <ScalarProperty Name="FrecuenciaMinimaMinima" ColumnName="FrecuenciaMinimaMinima" />
+          <ScalarProperty Name="FrecuenciaMinimaMaxima" ColumnName="FrecuenciaMinimaMaxima" />
+          <ScalarProperty Name="FrecuenciaPuntoInflexionMinima" ColumnName="FrecuenciaPuntoInflexionMinima" />
+          <ScalarProperty Name="FrecuenciaPuntoInflexionMaxima" ColumnName="FrecuenciaPuntoInflexionMaxima" />
+          <ScalarProperty Name="FrecuenciaCaracteristica" ColumnName="FrecuenciaCaracteristica" />
+          <ScalarProperty Name="FrecuenciaCaracteristicaMinima" ColumnName="FrecuenciaCaracteristicaMinima" />
+          <ScalarProperty Name="FrecuenciaCaracteristicaMaxima" ColumnName="FrecuenciaCaracteristicaMaxima" />
+          <ScalarProperty Name="FrecuenciaMaximaEnergiaMinima" ColumnName="FrecuenciaMaximaEnergiaMinima" />
+          <ScalarProperty Name="FrecuenciaMaximaEnergiaMaxima" ColumnName="FrecuenciaMaximaEnergiaMaxima" />
+          <ScalarProperty Name="AnchoBandaMinima" ColumnName="AnchoBandaMinima" />
+          <ScalarProperty Name="AnchoBandaMaxima" ColumnName="AnchoBandaMaxima" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nombrecomuns">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.nombrecomun">
+        <MappingFragment StoreEntitySet="nombrecomun">
+          <ScalarProperty Name="IdNombreComun" ColumnName="IdNombreComun" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+          <ScalarProperty Name="Principal" ColumnName="Principal" />
+          <ScalarProperty Name="Orden" ColumnName="Orden" />
+          <ScalarProperty Name="IdPublicacion" ColumnName="IdPublicacion" />
+          <ScalarProperty Name="Borrado" ColumnName="Borrado" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nombrecomuncatalogoes">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.nombrecomuncatalogo">
+        <MappingFragment StoreEntitySet="nombrecomuncatalogo">
+          <ScalarProperty Name="IdNombreComunCatalogo" ColumnName="IdNombreComunCatalogo" />
+          <ScalarProperty Name="IdNombreComun" ColumnName="IdNombreComun" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="Criterio" ColumnName="Criterio" />
+          <ScalarProperty Name="PublicacionListaRoja" ColumnName="PublicacionListaRoja" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nombrecomunpublicacions">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.nombrecomunpublicacion">
+        <MappingFragment StoreEntitySet="nombrecomunpublicacion">
+          <ScalarProperty Name="idnombrecomunpublicacion" ColumnName="idnombrecomunpublicacion" />
+          <ScalarProperty Name="idnombrecomun" ColumnName="idnombrecomun" />
+          <ScalarProperty Name="idpublicacion" ColumnName="idpublicacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ordenamientotaxas">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.ordenamientotaxa">
+        <MappingFragment StoreEntitySet="ordenamientotaxa">
+          <ScalarProperty Name="IdOrdenamientoTaxa" ColumnName="IdOrdenamientoTaxa" />
+          <ScalarProperty Name="Posicion" ColumnName="Posicion" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERFILs">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.PERFIL">
+        <MappingFragment StoreEntitySet="PERFIL">
+          <ScalarProperty Name="IDPERFIL" ColumnName="IDPERFIL" />
+          <ScalarProperty Name="PERFILNOMBRE" ColumnName="PERFILNOMBRE" />
+          <ScalarProperty Name="FECHAMODIFICACION" ColumnName="FECHAMODIFICACION" />
+          <ScalarProperty Name="USUARIOMODIFICACION" ColumnName="USUARIOMODIFICACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERMISOSPERFILs">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.PERMISOSPERFIL">
+        <MappingFragment StoreEntitySet="PERMISOSPERFIL">
+          <ScalarProperty Name="IDPERMISOSPERFIL" ColumnName="IDPERMISOSPERFIL" />
+          <ScalarProperty Name="IDPERFIL" ColumnName="IDPERFIL" />
+          <ScalarProperty Name="IDMENU" ColumnName="IDMENU" />
+          <ScalarProperty Name="SELECCIONARPERFIL" ColumnName="SELECCIONARPERFIL" />
+          <ScalarProperty Name="INSERTARPERFIL" ColumnName="INSERTARPERFIL" />
+          <ScalarProperty Name="ACTUALIZARPERFIL" ColumnName="ACTUALIZARPERFIL" />
+          <ScalarProperty Name="ELIMINARPERFIL" ColumnName="ELIMINARPERFIL" />
+          <ScalarProperty Name="FECHAMODIFICACION" ColumnName="FECHAMODIFICACION" />
+          <ScalarProperty Name="USUARIOMODIFICACION" ColumnName="USUARIOMODIFICACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="publicacions">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.publicacion">
+        <MappingFragment StoreEntitySet="publicacion">
+          <ScalarProperty Name="IdPublicacion" ColumnName="IdPublicacion" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="TituloSecundario" ColumnName="TituloSecundario" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+          <ScalarProperty Name="Editorial" ColumnName="Editorial" />
+          <ScalarProperty Name="Volumen" ColumnName="Volumen" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Pagina" ColumnName="Pagina" />
+          <ScalarProperty Name="PalabrasClave" ColumnName="PalabrasClave" />
+          <ScalarProperty Name="Resumen" ColumnName="Resumen" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="FechaCreacionRegistro" ColumnName="FechaCreacionRegistro" />
+          <ScalarProperty Name="PublicacionDelQcaz" ColumnName="PublicacionDelQcaz" />
+          <ScalarProperty Name="PublicaEnNoticias" ColumnName="PublicaEnNoticias" />
+          <ScalarProperty Name="PublicaEnWeb" ColumnName="PublicaEnWeb" />
+          <ScalarProperty Name="PublicaEnCV" ColumnName="PublicaEnCV" />
+          <ScalarProperty Name="IdExterno" ColumnName="IdExterno" />
+          <ScalarProperty Name="FuenteIdExterno" ColumnName="FuenteIdExterno" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="PubLocalidad" ColumnName="PubLocalidad" />
+          <ScalarProperty Name="Cita" ColumnName="Cita" />
+          <ScalarProperty Name="CitaCorta" ColumnName="CitaCorta" />
+          <ScalarProperty Name="Borrado" ColumnName="Borrado" />
+          <ScalarProperty Name="Ano" ColumnName="Ano" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="publicacionano_bak">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.publicacionano_bak">
+        <MappingFragment StoreEntitySet="publicacionano_bak">
+          <ScalarProperty Name="IdPublicacionAno" ColumnName="IdPublicacionAno" />
+          <ScalarProperty Name="Ano" ColumnName="Ano" />
+          <ScalarProperty Name="IdPublicacion" ColumnName="IdPublicacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="publicacionautors">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.publicacionautor">
+        <MappingFragment StoreEntitySet="publicacionautor">
+          <ScalarProperty Name="IdPublicacionAutor" ColumnName="IdPublicacionAutor" />
+          <ScalarProperty Name="IdPublicacion" ColumnName="IdPublicacion" />
+          <ScalarProperty Name="IdAutor" ColumnName="IdAutor" />
+          <ScalarProperty Name="OrdenAutor" ColumnName="OrdenAutor" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="publicacioncatalogoes">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.publicacioncatalogo">
+        <MappingFragment StoreEntitySet="publicacioncatalogo">
+          <ScalarProperty Name="IdPublicacionCatalogo" ColumnName="IdPublicacionCatalogo" />
+          <ScalarProperty Name="IdPublicacion" ColumnName="IdPublicacion" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="Criterio" ColumnName="Criterio" />
+          <ScalarProperty Name="PublicacionListaRoja" ColumnName="PublicacionListaRoja" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="publicacionenlaces">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.publicacionenlace">
+        <MappingFragment StoreEntitySet="publicacionenlace">
+          <ScalarProperty Name="IdPublicacionEnlace" ColumnName="IdPublicacionEnlace" />
+          <ScalarProperty Name="NombreArchivo" ColumnName="NombreArchivo" />
+          <ScalarProperty Name="EnlaceArchivo" ColumnName="EnlaceArchivo" />
+          <ScalarProperty Name="TextoEnlace" ColumnName="TextoEnlace" />
+          <ScalarProperty Name="IdPublicacion" ColumnName="IdPublicacion" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="Descarga" ColumnName="Descarga" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="reptilias">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.reptilia">
+        <MappingFragment StoreEntitySet="reptilia">
+          <ScalarProperty Name="IdReptilia" ColumnName="IdReptilia" />
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="Sinonimia" ColumnName="Sinonimia" />
+          <ScalarProperty Name="Identificacion" ColumnName="Identificacion" />
+          <ScalarProperty Name="ColorEnVida" ColumnName="ColorEnVida" />
+          <ScalarProperty Name="ColorEnPreservacion" ColumnName="ColorEnPreservacion" />
+          <ScalarProperty Name="Morfometria" ColumnName="Morfometria" />
+          <ScalarProperty Name="LongitudTotalMacho" ColumnName="LongitudTotalMacho" />
+          <ScalarProperty Name="SVLMacho" ColumnName="SVLMacho" />
+          <ScalarProperty Name="ReferenciaSVLMacho" ColumnName="ReferenciaSVLMacho" />
+          <ScalarProperty Name="LongitudTotalHembra" ColumnName="LongitudTotalHembra" />
+          <ScalarProperty Name="SVLHembra" ColumnName="SVLHembra" />
+          <ScalarProperty Name="ReferenciaSVLHembra" ColumnName="ReferenciaSVLHembra" />
+          <ScalarProperty Name="LepidosisLagartija" ColumnName="LepidosisLagartija" />
+          <ScalarProperty Name="ComentarioTamano" ColumnName="ComentarioTamano" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="reptiliacatalogoes">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.reptiliacatalogo">
+        <MappingFragment StoreEntitySet="reptiliacatalogo">
+          <ScalarProperty Name="IdReptiliaCatalogo" ColumnName="IdReptiliaCatalogo" />
+          <ScalarProperty Name="IdReptilia" ColumnName="IdReptilia" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Borrado" ColumnName="Borrado" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="criterio" ColumnName="criterio" />
+          <ScalarProperty Name="PublicacionListaRoja" ColumnName="PublicacionListaRoja" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sinonimoes">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.sinonimo">
+        <MappingFragment StoreEntitySet="sinonimo">
+          <ScalarProperty Name="IdSinonimo" ColumnName="IdSinonimo" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="IdTaxaSinonimo" ColumnName="IdTaxaSinonimo" />
+          <ScalarProperty Name="IdPublicacion" ColumnName="IdPublicacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="taxas">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.taxa">
+        <MappingFragment StoreEntitySet="taxa">
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NombreCorto" ColumnName="NombreCorto" />
+          <ScalarProperty Name="EnEcuador" ColumnName="EnEcuador" />
+          <ScalarProperty Name="Endemica" ColumnName="Endemica" />
+          <ScalarProperty Name="IdTaxaPadre" ColumnName="IdTaxaPadre" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="PublicarEnWeb" ColumnName="PublicarEnWeb" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="IdPublicacionReporte" ColumnName="IdPublicacionReporte" />
+          <ScalarProperty Name="Ano" ColumnName="Ano" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="taxaaudios">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.taxaaudio">
+        <MappingFragment StoreEntitySet="taxaaudio">
+          <ScalarProperty Name="IdTaxaAudio" ColumnName="IdTaxaAudio" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="IdAudio" ColumnName="IdAudio" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="PublicaEnWeb" ColumnName="PublicaEnWeb" />
+          <ScalarProperty Name="OrdenPresentacion" ColumnName="OrdenPresentacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="taxapublicacions">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.taxapublicacion">
+        <MappingFragment StoreEntitySet="taxapublicacion">
+          <ScalarProperty Name="IdTaxaPublicacion" ColumnName="IdTaxaPublicacion" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="IdPublicacion" ColumnName="IdPublicacion" />
+          <ScalarProperty Name="Principal" ColumnName="Principal" />
+          <ScalarProperty Name="Borrado" ColumnName="Borrado" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="taxavideos">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.taxavideo">
+        <MappingFragment StoreEntitySet="taxavideo">
+          <ScalarProperty Name="IdTaxaVideo" ColumnName="IdTaxaVideo" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="IdVideo" ColumnName="IdVideo" />
+          <ScalarProperty Name="Principal" ColumnName="Principal" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipoes">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.tipo">
+        <MappingFragment StoreEntitySet="tipo">
+          <ScalarProperty Name="IdTipo" ColumnName="IdTipo" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="NumeroMuseo" ColumnName="NumeroMuseo" />
+          <ScalarProperty Name="Medidas" ColumnName="Medidas" />
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+          <ScalarProperty Name="Principal" ColumnName="Principal" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="IdLocalidad" ColumnName="IdLocalidad" />
+          <ScalarProperty Name="Borrado" ColumnName="Borrado" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="LocalidadDescripcion" ColumnName="LocalidadDescripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipocatalogoes">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.tipocatalogo">
+        <MappingFragment StoreEntitySet="tipocatalogo">
+          <ScalarProperty Name="IdTipoCatalogo" ColumnName="IdTipoCatalogo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="IdTipoCatalogoPadre" ColumnName="IdTipoCatalogoPadre" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIOs">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.USUARIO">
+        <MappingFragment StoreEntitySet="USUARIO">
+          <ScalarProperty Name="IDUSUARIO" ColumnName="IDUSUARIO" />
+          <ScalarProperty Name="IDPERFIL" ColumnName="IDPERFIL" />
+          <ScalarProperty Name="USERUSUARIO" ColumnName="USERUSUARIO" />
+          <ScalarProperty Name="PASSWORDUSUARIO" ColumnName="PASSWORDUSUARIO" />
+          <ScalarProperty Name="RETRYPASSWORDUSUARIO" ColumnName="RETRYPASSWORDUSUARIO" />
+          <ScalarProperty Name="NOMBREUSUARIO" ColumnName="NOMBREUSUARIO" />
+          <ScalarProperty Name="APELLIDOUSUARIO" ColumnName="APELLIDOUSUARIO" />
+          <ScalarProperty Name="DIRECCIONUSUARIO" ColumnName="DIRECCIONUSUARIO" />
+          <ScalarProperty Name="TELEFONOUSUARIO" ColumnName="TELEFONOUSUARIO" />
+          <ScalarProperty Name="EMAILUSUARIO" ColumnName="EMAILUSUARIO" />
+          <ScalarProperty Name="FECHAMODIFICACION" ColumnName="FECHAMODIFICACION" />
+          <ScalarProperty Name="USUARIOMODIFICACION" ColumnName="USUARIOMODIFICACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="verificacionlocalidads">
+      <EntityTypeMapping TypeName="BiologiaBdRelacionesModel.verificacionlocalidad">
+        <MappingFragment StoreEntitySet="verificacionlocalidad">
+          <ScalarProperty Name="IdVerificacionLocalidad" ColumnName="IdVerificacionLocalidad" />
+          <ScalarProperty Name="IdLocalidad" ColumnName="IdLocalidad" />
+          <ScalarProperty Name="IdPersonal" ColumnName="IdPersonal" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+          <ScalarProperty Name="Fuente" ColumnName="Fuente" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SeleccionarTaxaEspeciePorIdTaxa" FunctionName="BiologiaBdRelacionesModel.Store.SeleccionarTaxaEspeciePorIdTaxa">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BiologiaBdRelacionesModel.SeleccionarTaxaEspeciePorIdTaxa_Result">
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NombreCorto" ColumnName="NombreCorto" />
+          <ScalarProperty Name="EnEcuador" ColumnName="EnEcuador" />
+          <ScalarProperty Name="Endemica" ColumnName="Endemica" />
+          <ScalarProperty Name="IdTaxaPadre" ColumnName="IdTaxaPadre" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="PublicarEnWeb" ColumnName="PublicarEnWeb" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="IdPublicacionReporte" ColumnName="IdPublicacionReporte" />
+          <ScalarProperty Name="Ano" ColumnName="Ano" />
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="IdTaxa1" ColumnName="IdTaxa1" />
+          <ScalarProperty Name="Etimologia" ColumnName="Etimologia" />
+          <ScalarProperty Name="Taxonomia" ColumnName="Taxonomia" />
+          <ScalarProperty Name="HabitatBiologia" ColumnName="HabitatBiologia" />
+          <ScalarProperty Name="Dieta" ColumnName="Dieta" />
+          <ScalarProperty Name="Reproduccion" ColumnName="Reproduccion" />
+          <ScalarProperty Name="InformacionAdicional" ColumnName="InformacionAdicional" />
+          <ScalarProperty Name="ComentarioEstatusPoblacional" ColumnName="ComentarioEstatusPoblacional" />
+          <ScalarProperty Name="Distribucion" ColumnName="Distribucion" />
+          <ScalarProperty Name="DistribucionGlobal" ColumnName="DistribucionGlobal" />
+          <ScalarProperty Name="ObservacionZonaAltitudinal" ColumnName="ObservacionZonaAltitudinal" />
+          <ScalarProperty Name="RangoAltitudinal" ColumnName="RangoAltitudinal" />
+          <ScalarProperty Name="ReferenciaAreaProtegida" ColumnName="ReferenciaAreaProtegida" />
+          <ScalarProperty Name="Compilador" ColumnName="Compilador" />
+          <ScalarProperty Name="FechaCompilacion" ColumnName="FechaCompilacion" />
+          <ScalarProperty Name="AutoriaCompilador" ColumnName="AutoriaCompilador" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+          <ScalarProperty Name="FechaEdicion" ColumnName="FechaEdicion" />
+          <ScalarProperty Name="AutoriaEditor" ColumnName="AutoriaEditor" />
+          <ScalarProperty Name="FechaActualizacion" ColumnName="FechaActualizacion" />
+          <ScalarProperty Name="Agradecimiento" ColumnName="Agradecimiento" />
+          <ScalarProperty Name="FechaModificacion1" ColumnName="FechaModificacion1" />
+          <ScalarProperty Name="UsuarioModificacion1" ColumnName="UsuarioModificacion1" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SeleccionarTaxaEspeciePorIdTaxaSP" FunctionName="BiologiaBdRelacionesModel.Store.SeleccionarTaxaEspeciePorIdTaxaSP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BiologiaBdRelacionesModel.SeleccionarTaxaEspeciePorIdTaxaSP_Result">
+          <ScalarProperty Name="Ano" ColumnName="Ano" />
+          <ScalarProperty Name="Endemica" ColumnName="Endemica" />
+          <ScalarProperty Name="EnEcuador" ColumnName="EnEcuador" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="IdPublicacionReporte" ColumnName="IdPublicacionReporte" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="IdTaxaPadre" ColumnName="IdTaxaPadre" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NombreCorto" ColumnName="NombreCorto" />
+          <ScalarProperty Name="PublicarEnWeb" ColumnName="PublicarEnWeb" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="Agradecimiento" ColumnName="Agradecimiento" />
+          <ScalarProperty Name="AutoriaCompilador" ColumnName="AutoriaCompilador" />
+          <ScalarProperty Name="AutoriaEditor" ColumnName="AutoriaEditor" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="ComentarioEstatusPoblacional" ColumnName="ComentarioEstatusPoblacional" />
+          <ScalarProperty Name="Compilador" ColumnName="Compilador" />
+          <ScalarProperty Name="Dieta" ColumnName="Dieta" />
+          <ScalarProperty Name="Distribucion" ColumnName="Distribucion" />
+          <ScalarProperty Name="DistribucionGlobal" ColumnName="DistribucionGlobal" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+          <ScalarProperty Name="Etimologia" ColumnName="Etimologia" />
+          <ScalarProperty Name="FechaActualizacion" ColumnName="FechaActualizacion" />
+          <ScalarProperty Name="FechaCompilacion" ColumnName="FechaCompilacion" />
+          <ScalarProperty Name="FechaEdicion" ColumnName="FechaEdicion" />
+          <ScalarProperty Name="FechaModificacion1" ColumnName="FechaModificacion1" />
+          <ScalarProperty Name="HabitatBiologia" ColumnName="HabitatBiologia" />
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="IdTaxaE" ColumnName="IdTaxaE" />
+          <ScalarProperty Name="InformacionAdicional" ColumnName="InformacionAdicional" />
+          <ScalarProperty Name="ObservacionZonaAltitudinal" ColumnName="ObservacionZonaAltitudinal" />
+          <ScalarProperty Name="RangoAltitudinal" ColumnName="RangoAltitudinal" />
+          <ScalarProperty Name="ReferenciaAreaProtegida" ColumnName="ReferenciaAreaProtegida" />
+          <ScalarProperty Name="Reproduccion" ColumnName="Reproduccion" />
+          <ScalarProperty Name="Taxonomia" ColumnName="Taxonomia" />
+          <ScalarProperty Name="UsuarioModificacion1" ColumnName="UsuarioModificacion1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SeleccionarTaxaEspeciePorIdTaxaSPFinal" FunctionName="BiologiaBdRelacionesModel.Store.SeleccionarTaxaEspeciePorIdTaxaSPFinal">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BiologiaBdRelacionesModel.SeleccionarTaxaEspeciePorIdTaxaSPFinal_Result">
+          <ScalarProperty Name="Ano" ColumnName="Ano" />
+          <ScalarProperty Name="Endemica" ColumnName="Endemica" />
+          <ScalarProperty Name="EnEcuador" ColumnName="EnEcuador" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="IdPublicacionReporte" ColumnName="IdPublicacionReporte" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="IdTaxaPadre" ColumnName="IdTaxaPadre" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NombreCorto" ColumnName="NombreCorto" />
+          <ScalarProperty Name="PublicarEnWeb" ColumnName="PublicarEnWeb" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="Agradecimiento" ColumnName="Agradecimiento" />
+          <ScalarProperty Name="AutoriaCompilador" ColumnName="AutoriaCompilador" />
+          <ScalarProperty Name="AutoriaEditor" ColumnName="AutoriaEditor" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="ComentarioEstatusPoblacional" ColumnName="ComentarioEstatusPoblacional" />
+          <ScalarProperty Name="Compilador" ColumnName="Compilador" />
+          <ScalarProperty Name="Dieta" ColumnName="Dieta" />
+          <ScalarProperty Name="Distribucion" ColumnName="Distribucion" />
+          <ScalarProperty Name="DistribucionGlobal" ColumnName="DistribucionGlobal" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+          <ScalarProperty Name="Etimologia" ColumnName="Etimologia" />
+          <ScalarProperty Name="FechaActualizacion" ColumnName="FechaActualizacion" />
+          <ScalarProperty Name="FechaCompilacion" ColumnName="FechaCompilacion" />
+          <ScalarProperty Name="FechaEdicion" ColumnName="FechaEdicion" />
+          <ScalarProperty Name="FechaModificacionE" ColumnName="FechaModificacionE" />
+          <ScalarProperty Name="HabitatBiologia" ColumnName="HabitatBiologia" />
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="IdTaxaE" ColumnName="IdTaxaE" />
+          <ScalarProperty Name="InformacionAdicional" ColumnName="InformacionAdicional" />
+          <ScalarProperty Name="ObservacionZonaAltitudinal" ColumnName="ObservacionZonaAltitudinal" />
+          <ScalarProperty Name="RangoAltitudinal" ColumnName="RangoAltitudinal" />
+          <ScalarProperty Name="ReferenciaAreaProtegida" ColumnName="ReferenciaAreaProtegida" />
+          <ScalarProperty Name="Reproduccion" ColumnName="Reproduccion" />
+          <ScalarProperty Name="Taxonomia" ColumnName="Taxonomia" />
+          <ScalarProperty Name="UsuarioModificacion1" ColumnName="UsuarioModificacion1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SeleccionarTaxaEspeciePorIdTaxaSPFinalFinal" FunctionName="BiologiaBdRelacionesModel.Store.SeleccionarTaxaEspeciePorIdTaxaSPFinalFinal">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BiologiaBdRelacionesModel.SeleccionarTaxaEspeciePorIdTaxaSPFinalFinal_Result">
+          <ScalarProperty Name="Ano" ColumnName="Ano" />
+          <ScalarProperty Name="Endemica" ColumnName="Endemica" />
+          <ScalarProperty Name="EnEcuador" ColumnName="EnEcuador" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="IdPublicacionReporte" ColumnName="IdPublicacionReporte" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="IdTaxaPadre" ColumnName="IdTaxaPadre" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NombreCorto" ColumnName="NombreCorto" />
+          <ScalarProperty Name="PublicarEnWeb" ColumnName="PublicarEnWeb" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="Agradecimiento" ColumnName="Agradecimiento" />
+          <ScalarProperty Name="AutoriaCompilador" ColumnName="AutoriaCompilador" />
+          <ScalarProperty Name="AutoriaEditor" ColumnName="AutoriaEditor" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="ComentarioEstatusPoblacional" ColumnName="ComentarioEstatusPoblacional" />
+          <ScalarProperty Name="Compilador" ColumnName="Compilador" />
+          <ScalarProperty Name="Dieta" ColumnName="Dieta" />
+          <ScalarProperty Name="Distribucion" ColumnName="Distribucion" />
+          <ScalarProperty Name="DistribucionGlobal" ColumnName="DistribucionGlobal" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+          <ScalarProperty Name="Etimologia" ColumnName="Etimologia" />
+          <ScalarProperty Name="FechaActualizacion" ColumnName="FechaActualizacion" />
+          <ScalarProperty Name="FechaCompilacion" ColumnName="FechaCompilacion" />
+          <ScalarProperty Name="FechaEdicion" ColumnName="FechaEdicion" />
+          <ScalarProperty Name="FechaModificacionE" ColumnName="FechaModificacionE" />
+          <ScalarProperty Name="HabitatBiologia" ColumnName="HabitatBiologia" />
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="IdTaxaE" ColumnName="IdTaxaE" />
+          <ScalarProperty Name="InformacionAdicional" ColumnName="InformacionAdicional" />
+          <ScalarProperty Name="ObservacionZonaAltitudinal" ColumnName="ObservacionZonaAltitudinal" />
+          <ScalarProperty Name="RangoAltitudinal" ColumnName="RangoAltitudinal" />
+          <ScalarProperty Name="ReferenciaAreaProtegida" ColumnName="ReferenciaAreaProtegida" />
+          <ScalarProperty Name="Reproduccion" ColumnName="Reproduccion" />
+          <ScalarProperty Name="Taxonomia" ColumnName="Taxonomia" />
+          <ScalarProperty Name="UsuarioModificacionE" ColumnName="UsuarioModificacionE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SeleccionarTaxaEspeciePorIdTaxaSPSP" FunctionName="BiologiaBdRelacionesModel.Store.SeleccionarTaxaEspeciePorIdTaxaSPSP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BiologiaBdRelacionesModel.SeleccionarTaxaEspeciePorIdTaxaSPSP_Result">
+          <ScalarProperty Name="Ano" ColumnName="Ano" />
+          <ScalarProperty Name="Endemica" ColumnName="Endemica" />
+          <ScalarProperty Name="EnEcuador" ColumnName="EnEcuador" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="IdPublicacionReporte" ColumnName="IdPublicacionReporte" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="IdTaxaPadre" ColumnName="IdTaxaPadre" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NombreCorto" ColumnName="NombreCorto" />
+          <ScalarProperty Name="PublicarEnWeb" ColumnName="PublicarEnWeb" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="Agradecimiento" ColumnName="Agradecimiento" />
+          <ScalarProperty Name="AutoriaCompilador" ColumnName="AutoriaCompilador" />
+          <ScalarProperty Name="AutoriaEditor" ColumnName="AutoriaEditor" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="ComentarioEstatusPoblacional" ColumnName="ComentarioEstatusPoblacional" />
+          <ScalarProperty Name="Compilador" ColumnName="Compilador" />
+          <ScalarProperty Name="Dieta" ColumnName="Dieta" />
+          <ScalarProperty Name="Distribucion" ColumnName="Distribucion" />
+          <ScalarProperty Name="DistribucionGlobal" ColumnName="DistribucionGlobal" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+          <ScalarProperty Name="Etimologia" ColumnName="Etimologia" />
+          <ScalarProperty Name="FechaActualizacion" ColumnName="FechaActualizacion" />
+          <ScalarProperty Name="FechaCompilacion" ColumnName="FechaCompilacion" />
+          <ScalarProperty Name="FechaEdicion" ColumnName="FechaEdicion" />
+          <ScalarProperty Name="FechaModificacionE" ColumnName="FechaModificacionE" />
+          <ScalarProperty Name="HabitatBiologia" ColumnName="HabitatBiologia" />
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="IdTaxaE" ColumnName="IdTaxaE" />
+          <ScalarProperty Name="InformacionAdicional" ColumnName="InformacionAdicional" />
+          <ScalarProperty Name="ObservacionZonaAltitudinal" ColumnName="ObservacionZonaAltitudinal" />
+          <ScalarProperty Name="RangoAltitudinal" ColumnName="RangoAltitudinal" />
+          <ScalarProperty Name="ReferenciaAreaProtegida" ColumnName="ReferenciaAreaProtegida" />
+          <ScalarProperty Name="Reproduccion" ColumnName="Reproduccion" />
+          <ScalarProperty Name="Taxonomia" ColumnName="Taxonomia" />
+          <ScalarProperty Name="UsuarioModificacion1" ColumnName="UsuarioModificacion1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SeleccionarTaxaPorId" FunctionName="BiologiaBdRelacionesModel.Store.SeleccionarTaxaPorId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BiologiaBdRelacionesModel.SeleccionarTaxaPorId_Result">
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NombreCorto" ColumnName="NombreCorto" />
+          <ScalarProperty Name="EnEcuador" ColumnName="EnEcuador" />
+          <ScalarProperty Name="Endemica" ColumnName="Endemica" />
+          <ScalarProperty Name="IdTaxaPadre" ColumnName="IdTaxaPadre" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="PublicarEnWeb" ColumnName="PublicarEnWeb" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="IdPublicacionReporte" ColumnName="IdPublicacionReporte" />
+          <ScalarProperty Name="Ano" ColumnName="Ano" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SeleccionarTaxas" FunctionName="BiologiaBdRelacionesModel.Store.SeleccionarTaxas">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BiologiaBdRelacionesModel.SeleccionarTaxas_Result">
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NombreCorto" ColumnName="NombreCorto" />
+          <ScalarProperty Name="EnEcuador" ColumnName="EnEcuador" />
+          <ScalarProperty Name="Endemica" ColumnName="Endemica" />
+          <ScalarProperty Name="IdTaxaPadre" ColumnName="IdTaxaPadre" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="PublicarEnWeb" ColumnName="PublicarEnWeb" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="IdPublicacionReporte" ColumnName="IdPublicacionReporte" />
+          <ScalarProperty Name="Ano" ColumnName="Ano" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SeleccionarTaxasAmphibiaSP" FunctionName="BiologiaBdRelacionesModel.Store.SeleccionarTaxasAmphibiaSP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BiologiaBdRelacionesModel.SeleccionarTaxasAmphibiaSP_Result">
+          <ScalarProperty Name="Ano" ColumnName="Ano" />
+          <ScalarProperty Name="Endemica" ColumnName="Endemica" />
+          <ScalarProperty Name="EnEcuador" ColumnName="EnEcuador" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="IdPublicacionReporte" ColumnName="IdPublicacionReporte" />
+          <ScalarProperty Name="IdTaxa" ColumnName="IdTaxa" />
+          <ScalarProperty Name="IdTaxaPadre" ColumnName="IdTaxaPadre" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NombreCorto" ColumnName="NombreCorto" />
+          <ScalarProperty Name="PublicarEnWeb" ColumnName="PublicarEnWeb" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="Agradecimiento" ColumnName="Agradecimiento" />
+          <ScalarProperty Name="AutoriaCompilador" ColumnName="AutoriaCompilador" />
+          <ScalarProperty Name="AutoriaEditor" ColumnName="AutoriaEditor" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="ComentarioEstatusPoblacional" ColumnName="ComentarioEstatusPoblacional" />
+          <ScalarProperty Name="Compilador" ColumnName="Compilador" />
+          <ScalarProperty Name="Dieta" ColumnName="Dieta" />
+          <ScalarProperty Name="Distribucion" ColumnName="Distribucion" />
+          <ScalarProperty Name="DistribucionGlobal" ColumnName="DistribucionGlobal" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+          <ScalarProperty Name="Etimologia" ColumnName="Etimologia" />
+          <ScalarProperty Name="FechaActualizacion" ColumnName="FechaActualizacion" />
+          <ScalarProperty Name="FechaCompilacion" ColumnName="FechaCompilacion" />
+          <ScalarProperty Name="FechaEdicion" ColumnName="FechaEdicion" />
+          <ScalarProperty Name="FechaModificacionE" ColumnName="FechaModificacionE" />
+          <ScalarProperty Name="HabitatBiologia" ColumnName="HabitatBiologia" />
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="IdTaxaE" ColumnName="IdTaxaE" />
+          <ScalarProperty Name="InformacionAdicional" ColumnName="InformacionAdicional" />
+          <ScalarProperty Name="ObservacionZonaAltitudinal" ColumnName="ObservacionZonaAltitudinal" />
+          <ScalarProperty Name="RangoAltitudinal" ColumnName="RangoAltitudinal" />
+          <ScalarProperty Name="ReferenciaAreaProtegida" ColumnName="ReferenciaAreaProtegida" />
+          <ScalarProperty Name="Reproduccion" ColumnName="Reproduccion" />
+          <ScalarProperty Name="Taxonomia" ColumnName="Taxonomia" />
+          <ScalarProperty Name="UsuarioModificacionE" ColumnName="UsuarioModificacionE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="BiologiaBdRelacionesModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="BiologiaBdRelacionesModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="BiologiaBdRelacionesModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="BiologiaBdRelacionesModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BiologiaBdRelacionesModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="BiologiaBdRelacionesModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BiologiaBdRelacionesModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="BiologiaBdRelacionesModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="BiologiaBdRelacionesModel.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

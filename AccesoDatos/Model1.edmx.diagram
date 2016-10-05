@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9fd96ebcef2741a1a7b8e6b864b1ba45" Name="Diagrama1">
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.amphibia" Width="1.5" PointX="5.25" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.autor" Width="1.5" PointX="8.75" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.autorbiografia" Width="1.5" PointX="11" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.ave" Width="1.5" PointX="5.25" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.biografia" Width="1.5" PointX="8.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.catalogo" Width="1.5" PointX="6" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.ColaReporte" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.divisiongeopolitica" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.divisiongeopoliticacatalogoap" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.enlacerelacionado" Width="1.5" PointX="5.25" PointY="31.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.especie" Width="1.5" PointX="3" PointY="29.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.especiecatalogo" Width="1.5" PointX="8.25" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.especielocalidad" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.especiman" Width="1.5" PointX="3" PointY="37" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.ImagenEspeciman" Width="1.5" PointX="10.25" PointY="43.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.localidad" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.localidadcatalogo" Width="1.5" PointX="9.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.mammalia" Width="1.5" PointX="5.25" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.MENU" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.multimedia" Width="1.5" PointX="5.25" PointY="51.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.nombrecomun" Width="1.5" PointX="8" PointY="35.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.nombrecomuncatalogo" Width="1.5" PointX="13.25" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.nombrecomunpublicacion" Width="1.5" PointX="12.25" PointY="40.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.ordenamientotaxa" Width="1.5" PointX="3" PointY="67.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.PERFIL" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.PERMISOSPERFIL" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.publicacion" Width="1.5" PointX="8.75" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.publicacionano_bak" Width="1.5" PointX="5.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.publicacionautor" Width="1.5" PointX="11" PointY="25.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.publicacioncatalogo" Width="1.5" PointX="11" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.publicacionenlace" Width="1.5" PointX="14" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.reptilia" Width="1.5" PointX="5.25" PointY="42.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.reptiliacatalogo" Width="1.5" PointX="7.5" PointY="43.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.sinonimo" Width="1.5" PointX="10" PointY="40.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.sysdiagram" Width="1.5" PointX="7.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.taxa" Width="1.5" PointX="0.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.taxaaudio" Width="1.5" PointX="9.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.taxapublicacion" Width="1.5" PointX="11" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.taxavideo" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.tipo" Width="1.5" PointX="3" PointY="77" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.tipocatalogo" Width="1.5" PointX="3.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.USUARIO" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiologiaBdRelacionesModel.verificacionlocalidad" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_amphibia_especie" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_autorbiografia_autor" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_publicacionautor_autor" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_autorbiografia_biografia" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_aves_especie" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_catalogo_tipocatalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_especiecatalogo_catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_ImagenEspecimen_catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_multimedia_catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_nombrecomuncatalogo_catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_publicacioncatalogo_catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_publicacionenlace_catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_reptiliacatalogo_catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_enlacerelacionado_especie" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_especie_taxa" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_especiecatalogo_especie" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_mammalia_especie" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_reptilia_especie" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK__especimen__IdPub__07420643" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_especimen_taxa" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_ImagenEspecimen_especimen" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_PERMISOS_RELATIONS_MENU" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_multimedia_taxa" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_multimedia_tipo" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_nombrecomun_publicacion" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_nombrecomun_taxa" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_nombrecomuncatalogo_nombrecomun" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_nombrecomunpublicacion_nombrecomun" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_nombrecomunpublicacion_publicacion" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_ordenamientotaxa_taxa" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_PERMISOS_RELATIONS_PERFIL" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_USUARIO_RELATIONS_PERFIL" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_publicacionautor_publicacion" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_publicacioncatalogo_publicacion" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_publicacionenlace_publicacion" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_sinonimo_publicacion" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_taxapublicacion_publicacion" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_reptiliacatalogo_reptilia" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_sinonimo_taxa" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_taxa_taxa" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_taxapublicacion_taxa" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_tipo_taxa" ManuallyRouted="false" />
+        <AssociationConnector Association="BiologiaBdRelacionesModel.FK_tipocatalogo_tipocatalogo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

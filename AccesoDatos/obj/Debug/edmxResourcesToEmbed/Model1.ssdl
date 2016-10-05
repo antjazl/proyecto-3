@@ -1,0 +1,1466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BiologiaBdRelacionesModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BiologiaBdRelacionesModelStoreContainer">
+    <EntitySet Name="amphibia" EntityType="BiologiaBdRelacionesModel.Store.amphibia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autor" EntityType="BiologiaBdRelacionesModel.Store.autor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autorbiografia" EntityType="BiologiaBdRelacionesModel.Store.autorbiografia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aves" EntityType="BiologiaBdRelacionesModel.Store.aves" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="biografia" EntityType="BiologiaBdRelacionesModel.Store.biografia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="catalogo" EntityType="BiologiaBdRelacionesModel.Store.catalogo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ColaReporte" EntityType="BiologiaBdRelacionesModel.Store.ColaReporte" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="divisiongeopolitica" EntityType="BiologiaBdRelacionesModel.Store.divisiongeopolitica" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="divisiongeopoliticacatalogoap" EntityType="BiologiaBdRelacionesModel.Store.divisiongeopoliticacatalogoap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="enlacerelacionado" EntityType="BiologiaBdRelacionesModel.Store.enlacerelacionado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="especie" EntityType="BiologiaBdRelacionesModel.Store.especie" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="especiecatalogo" EntityType="BiologiaBdRelacionesModel.Store.especiecatalogo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="especielocalidad" EntityType="BiologiaBdRelacionesModel.Store.especielocalidad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="especimen" EntityType="BiologiaBdRelacionesModel.Store.especimen" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ImagenEspecimen" EntityType="BiologiaBdRelacionesModel.Store.ImagenEspecimen" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="localidad" EntityType="BiologiaBdRelacionesModel.Store.localidad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="localidadcatalogo" EntityType="BiologiaBdRelacionesModel.Store.localidadcatalogo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mammalia" EntityType="BiologiaBdRelacionesModel.Store.mammalia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MENU" EntityType="BiologiaBdRelacionesModel.Store.MENU" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="multimedia" EntityType="BiologiaBdRelacionesModel.Store.multimedia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="nombrecomun" EntityType="BiologiaBdRelacionesModel.Store.nombrecomun" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="nombrecomuncatalogo" EntityType="BiologiaBdRelacionesModel.Store.nombrecomuncatalogo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="nombrecomunpublicacion" EntityType="BiologiaBdRelacionesModel.Store.nombrecomunpublicacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ordenamientotaxa" EntityType="BiologiaBdRelacionesModel.Store.ordenamientotaxa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PERFIL" EntityType="BiologiaBdRelacionesModel.Store.PERFIL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PERMISOSPERFIL" EntityType="BiologiaBdRelacionesModel.Store.PERMISOSPERFIL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="publicacion" EntityType="BiologiaBdRelacionesModel.Store.publicacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="publicacionano_bak" EntityType="BiologiaBdRelacionesModel.Store.publicacionano_bak" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="publicacionautor" EntityType="BiologiaBdRelacionesModel.Store.publicacionautor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="publicacioncatalogo" EntityType="BiologiaBdRelacionesModel.Store.publicacioncatalogo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="publicacionenlace" EntityType="BiologiaBdRelacionesModel.Store.publicacionenlace" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="reptilia" EntityType="BiologiaBdRelacionesModel.Store.reptilia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="reptiliacatalogo" EntityType="BiologiaBdRelacionesModel.Store.reptiliacatalogo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sinonimo" EntityType="BiologiaBdRelacionesModel.Store.sinonimo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="BiologiaBdRelacionesModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="taxa" EntityType="BiologiaBdRelacionesModel.Store.taxa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="taxaaudio" EntityType="BiologiaBdRelacionesModel.Store.taxaaudio" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="taxapublicacion" EntityType="BiologiaBdRelacionesModel.Store.taxapublicacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="taxavideo" EntityType="BiologiaBdRelacionesModel.Store.taxavideo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipo" EntityType="BiologiaBdRelacionesModel.Store.tipo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipocatalogo" EntityType="BiologiaBdRelacionesModel.Store.tipocatalogo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="USUARIO" EntityType="BiologiaBdRelacionesModel.Store.USUARIO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="verificacionlocalidad" EntityType="BiologiaBdRelacionesModel.Store.verificacionlocalidad" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__especimen__IdPub__07420643" Association="BiologiaBdRelacionesModel.Store.FK__especimen__IdPub__07420643">
+      <End Role="publicacion" EntitySet="publicacion" />
+      <End Role="especimen" EntitySet="especimen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_amphibia_especie" Association="BiologiaBdRelacionesModel.Store.FK_amphibia_especie">
+      <End Role="especie" EntitySet="especie" />
+      <End Role="amphibia" EntitySet="amphibia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_autorbiografia_autor" Association="BiologiaBdRelacionesModel.Store.FK_autorbiografia_autor">
+      <End Role="autor" EntitySet="autor" />
+      <End Role="autorbiografia" EntitySet="autorbiografia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_autorbiografia_biografia" Association="BiologiaBdRelacionesModel.Store.FK_autorbiografia_biografia">
+      <End Role="biografia" EntitySet="biografia" />
+      <End Role="autorbiografia" EntitySet="autorbiografia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_aves_especie" Association="BiologiaBdRelacionesModel.Store.FK_aves_especie">
+      <End Role="especie" EntitySet="especie" />
+      <End Role="aves" EntitySet="aves" />
+    </AssociationSet>
+    <AssociationSet Name="FK_catalogo_tipocatalogo" Association="BiologiaBdRelacionesModel.Store.FK_catalogo_tipocatalogo">
+      <End Role="tipocatalogo" EntitySet="tipocatalogo" />
+      <End Role="catalogo" EntitySet="catalogo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_enlacerelacionado_especie" Association="BiologiaBdRelacionesModel.Store.FK_enlacerelacionado_especie">
+      <End Role="especie" EntitySet="especie" />
+      <End Role="enlacerelacionado" EntitySet="enlacerelacionado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_especie_taxa" Association="BiologiaBdRelacionesModel.Store.FK_especie_taxa">
+      <End Role="taxa" EntitySet="taxa" />
+      <End Role="especie" EntitySet="especie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_especiecatalogo_catalogo" Association="BiologiaBdRelacionesModel.Store.FK_especiecatalogo_catalogo">
+      <End Role="catalogo" EntitySet="catalogo" />
+      <End Role="especiecatalogo" EntitySet="especiecatalogo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_especiecatalogo_especie" Association="BiologiaBdRelacionesModel.Store.FK_especiecatalogo_especie">
+      <End Role="especie" EntitySet="especie" />
+      <End Role="especiecatalogo" EntitySet="especiecatalogo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_especimen_taxa" Association="BiologiaBdRelacionesModel.Store.FK_especimen_taxa">
+      <End Role="taxa" EntitySet="taxa" />
+      <End Role="especimen" EntitySet="especimen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ImagenEspecimen_catalogo" Association="BiologiaBdRelacionesModel.Store.FK_ImagenEspecimen_catalogo">
+      <End Role="catalogo" EntitySet="catalogo" />
+      <End Role="ImagenEspecimen" EntitySet="ImagenEspecimen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ImagenEspecimen_especimen" Association="BiologiaBdRelacionesModel.Store.FK_ImagenEspecimen_especimen">
+      <End Role="especimen" EntitySet="especimen" />
+      <End Role="ImagenEspecimen" EntitySet="ImagenEspecimen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mammalia_especie" Association="BiologiaBdRelacionesModel.Store.FK_mammalia_especie">
+      <End Role="especie" EntitySet="especie" />
+      <End Role="mammalia" EntitySet="mammalia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_multimedia_catalogo" Association="BiologiaBdRelacionesModel.Store.FK_multimedia_catalogo">
+      <End Role="catalogo" EntitySet="catalogo" />
+      <End Role="multimedia" EntitySet="multimedia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_multimedia_taxa" Association="BiologiaBdRelacionesModel.Store.FK_multimedia_taxa">
+      <End Role="taxa" EntitySet="taxa" />
+      <End Role="multimedia" EntitySet="multimedia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_multimedia_tipo" Association="BiologiaBdRelacionesModel.Store.FK_multimedia_tipo">
+      <End Role="tipo" EntitySet="tipo" />
+      <End Role="multimedia" EntitySet="multimedia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_nombrecomun_publicacion" Association="BiologiaBdRelacionesModel.Store.FK_nombrecomun_publicacion">
+      <End Role="publicacion" EntitySet="publicacion" />
+      <End Role="nombrecomun" EntitySet="nombrecomun" />
+    </AssociationSet>
+    <AssociationSet Name="FK_nombrecomun_taxa" Association="BiologiaBdRelacionesModel.Store.FK_nombrecomun_taxa">
+      <End Role="taxa" EntitySet="taxa" />
+      <End Role="nombrecomun" EntitySet="nombrecomun" />
+    </AssociationSet>
+    <AssociationSet Name="FK_nombrecomuncatalogo_catalogo" Association="BiologiaBdRelacionesModel.Store.FK_nombrecomuncatalogo_catalogo">
+      <End Role="catalogo" EntitySet="catalogo" />
+      <End Role="nombrecomuncatalogo" EntitySet="nombrecomuncatalogo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_nombrecomuncatalogo_nombrecomun" Association="BiologiaBdRelacionesModel.Store.FK_nombrecomuncatalogo_nombrecomun">
+      <End Role="nombrecomun" EntitySet="nombrecomun" />
+      <End Role="nombrecomuncatalogo" EntitySet="nombrecomuncatalogo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_nombrecomunpublicacion_nombrecomun" Association="BiologiaBdRelacionesModel.Store.FK_nombrecomunpublicacion_nombrecomun">
+      <End Role="nombrecomun" EntitySet="nombrecomun" />
+      <End Role="nombrecomunpublicacion" EntitySet="nombrecomunpublicacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_nombrecomunpublicacion_publicacion" Association="BiologiaBdRelacionesModel.Store.FK_nombrecomunpublicacion_publicacion">
+      <End Role="publicacion" EntitySet="publicacion" />
+      <End Role="nombrecomunpublicacion" EntitySet="nombrecomunpublicacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ordenamientotaxa_taxa" Association="BiologiaBdRelacionesModel.Store.FK_ordenamientotaxa_taxa">
+      <End Role="taxa" EntitySet="taxa" />
+      <End Role="ordenamientotaxa" EntitySet="ordenamientotaxa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PERMISOS_RELATIONS_MENU" Association="BiologiaBdRelacionesModel.Store.FK_PERMISOS_RELATIONS_MENU">
+      <End Role="MENU" EntitySet="MENU" />
+      <End Role="PERMISOSPERFIL" EntitySet="PERMISOSPERFIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PERMISOS_RELATIONS_PERFIL" Association="BiologiaBdRelacionesModel.Store.FK_PERMISOS_RELATIONS_PERFIL">
+      <End Role="PERFIL" EntitySet="PERFIL" />
+      <End Role="PERMISOSPERFIL" EntitySet="PERMISOSPERFIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_publicacionautor_autor" Association="BiologiaBdRelacionesModel.Store.FK_publicacionautor_autor">
+      <End Role="autor" EntitySet="autor" />
+      <End Role="publicacionautor" EntitySet="publicacionautor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_publicacionautor_publicacion" Association="BiologiaBdRelacionesModel.Store.FK_publicacionautor_publicacion">
+      <End Role="publicacion" EntitySet="publicacion" />
+      <End Role="publicacionautor" EntitySet="publicacionautor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_publicacioncatalogo_catalogo" Association="BiologiaBdRelacionesModel.Store.FK_publicacioncatalogo_catalogo">
+      <End Role="catalogo" EntitySet="catalogo" />
+      <End Role="publicacioncatalogo" EntitySet="publicacioncatalogo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_publicacioncatalogo_publicacion" Association="BiologiaBdRelacionesModel.Store.FK_publicacioncatalogo_publicacion">
+      <End Role="publicacion" EntitySet="publicacion" />
+      <End Role="publicacioncatalogo" EntitySet="publicacioncatalogo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_publicacionenlace_catalogo" Association="BiologiaBdRelacionesModel.Store.FK_publicacionenlace_catalogo">
+      <End Role="catalogo" EntitySet="catalogo" />
+      <End Role="publicacionenlace" EntitySet="publicacionenlace" />
+    </AssociationSet>
+    <AssociationSet Name="FK_publicacionenlace_publicacion" Association="BiologiaBdRelacionesModel.Store.FK_publicacionenlace_publicacion">
+      <End Role="publicacion" EntitySet="publicacion" />
+      <End Role="publicacionenlace" EntitySet="publicacionenlace" />
+    </AssociationSet>
+    <AssociationSet Name="FK_reptilia_especie" Association="BiologiaBdRelacionesModel.Store.FK_reptilia_especie">
+      <End Role="especie" EntitySet="especie" />
+      <End Role="reptilia" EntitySet="reptilia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_reptiliacatalogo_catalogo" Association="BiologiaBdRelacionesModel.Store.FK_reptiliacatalogo_catalogo">
+      <End Role="catalogo" EntitySet="catalogo" />
+      <End Role="reptiliacatalogo" EntitySet="reptiliacatalogo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_reptiliacatalogo_reptilia" Association="BiologiaBdRelacionesModel.Store.FK_reptiliacatalogo_reptilia">
+      <End Role="reptilia" EntitySet="reptilia" />
+      <End Role="reptiliacatalogo" EntitySet="reptiliacatalogo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sinonimo_publicacion" Association="BiologiaBdRelacionesModel.Store.FK_sinonimo_publicacion">
+      <End Role="publicacion" EntitySet="publicacion" />
+      <End Role="sinonimo" EntitySet="sinonimo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sinonimo_taxa" Association="BiologiaBdRelacionesModel.Store.FK_sinonimo_taxa">
+      <End Role="taxa" EntitySet="taxa" />
+      <End Role="sinonimo" EntitySet="sinonimo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_taxa_taxa" Association="BiologiaBdRelacionesModel.Store.FK_taxa_taxa">
+      <End Role="taxa" EntitySet="taxa" />
+      <End Role="taxa1" EntitySet="taxa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_taxapublicacion_publicacion" Association="BiologiaBdRelacionesModel.Store.FK_taxapublicacion_publicacion">
+      <End Role="publicacion" EntitySet="publicacion" />
+      <End Role="taxapublicacion" EntitySet="taxapublicacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_taxapublicacion_taxa" Association="BiologiaBdRelacionesModel.Store.FK_taxapublicacion_taxa">
+      <End Role="taxa" EntitySet="taxa" />
+      <End Role="taxapublicacion" EntitySet="taxapublicacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tipo_taxa" Association="BiologiaBdRelacionesModel.Store.FK_tipo_taxa">
+      <End Role="taxa" EntitySet="taxa" />
+      <End Role="tipo" EntitySet="tipo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tipocatalogo_tipocatalogo" Association="BiologiaBdRelacionesModel.Store.FK_tipocatalogo_tipocatalogo">
+      <End Role="tipocatalogo" EntitySet="tipocatalogo" />
+      <End Role="tipocatalogo1" EntitySet="tipocatalogo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USUARIO_RELATIONS_PERFIL" Association="BiologiaBdRelacionesModel.Store.FK_USUARIO_RELATIONS_PERFIL">
+      <End Role="PERFIL" EntitySet="PERFIL" />
+      <End Role="USUARIO" EntitySet="USUARIO" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="amphibia">
+    <Key>
+      <PropertyRef Name="IdAmphibia" />
+    </Key>
+    <Property Name="IdAmphibia" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEspecie" Type="bigint" Nullable="false" />
+    <Property Name="Sinonimia" Type="nvarchar(max)" />
+    <Property Name="Identificacion" Type="nvarchar(max)" />
+    <Property Name="Descripcion" Type="nvarchar(max)" />
+    <Property Name="ColorEnVida" Type="nvarchar(max)" />
+    <Property Name="Diagnosis" Type="nvarchar(max)" />
+    <Property Name="Morfometria" Type="nvarchar(max)" />
+    <Property Name="SVLMacho" Type="nvarchar" MaxLength="255" />
+    <Property Name="ReferenciaSVLMacho" Type="nvarchar" MaxLength="255" />
+    <Property Name="SVLHembra" Type="nvarchar" MaxLength="255" />
+    <Property Name="ReferenciaSVLHembra" Type="nvarchar" MaxLength="255" />
+    <Property Name="Comportamiento" Type="nvarchar(max)" />
+    <Property Name="Larva" Type="nvarchar(max)" />
+    <Property Name="Canto" Type="nvarchar(max)" />
+    <Property Name="ColorEnPreservacion" Type="nvarchar(max)" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="autor">
+    <Key>
+      <PropertyRef Name="IdAutor" />
+    </Key>
+    <Property Name="IdAutor" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombres" Type="nvarchar" MaxLength="100" />
+    <Property Name="Apellidos" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="EnlaceBiografia" Type="nvarchar" MaxLength="1000" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="autorbiografia">
+    <Key>
+      <PropertyRef Name="IdAutorBiografia" />
+    </Key>
+    <Property Name="IdAutorBiografia" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdAutor" Type="bigint" Nullable="false" />
+    <Property Name="IdBiografia" Type="bigint" Nullable="false" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="aves">
+    <Key>
+      <PropertyRef Name="IdAves" />
+    </Key>
+    <Property Name="IdAves" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEspecie" Type="bigint" Nullable="false" />
+    <Property Name="Identificacion" Type="nvarchar(max)" />
+    <Property Name="CasiEndemica" Type="bit" Nullable="false" />
+    <Property Name="TaxonomiaRidgelyGreenfield" Type="nvarchar" MaxLength="255" />
+    <Property Name="ComentarioTaxonomia" Type="nvarchar(max)" />
+    <Property Name="Movimiento" Type="nvarchar(max)" />
+    <Property Name="DistribucionSubespecies" Type="nvarchar(max)" />
+    <Property Name="NotaPresenciaProvincia" Type="nvarchar(max)" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="biografia">
+    <Key>
+      <PropertyRef Name="IdBiografia" />
+    </Key>
+    <Property Name="IdBiografia" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AnoNacimiento" Type="int" />
+    <Property Name="LugarNacimiento" Type="nvarchar" MaxLength="255" />
+    <Property Name="InicioInteresEstudio" Type="nvarchar(max)" />
+    <Property Name="TitulosAcademicos" Type="nvarchar(max)" />
+    <Property Name="InteresInvestigacion" Type="nvarchar(max)" />
+    <Property Name="ExperienciaLaboral" Type="nvarchar(max)" />
+    <Property Name="PosicionActual" Type="nvarchar(max)" />
+    <Property Name="AsociacionesProfesionales" Type="nvarchar(max)" />
+    <Property Name="PremiosReconocimientos" Type="nvarchar(max)" />
+    <Property Name="CorreoElectronico" Type="nvarchar" MaxLength="255" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="catalogo">
+    <Key>
+      <PropertyRef Name="IdCatalogo" />
+    </Key>
+    <Property Name="IdCatalogo" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Sigla" Type="nvarchar" MaxLength="20" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="255" />
+    <Property Name="IdTipoCatalogo" Type="bigint" Nullable="false" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="ColaReporte">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SessionId" Type="varchar" MaxLength="100" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="HoraPeticion" Type="datetime" />
+    <Property Name="Estado" Type="varchar" MaxLength="50" />
+    <Property Name="IdCatalogo1" Type="int" />
+    <Property Name="IdCatalogo2" Type="int" />
+    <Property Name="IdCatalogo3" Type="int" />
+    <Property Name="IdCatalogo4" Type="int" />
+    <Property Name="IdCatalogo5" Type="int" />
+    <Property Name="IdCatalogo6" Type="int" />
+    <Property Name="IdCatalogo7" Type="int" />
+    <Property Name="IdCatalogo8" Type="int" />
+    <Property Name="IdTaxaOrden" Type="bigint" />
+    <Property Name="IdTaxa" Type="bigint" />
+    <Property Name="NombreTaxaGenero" Type="varchar" MaxLength="50" />
+    <Property Name="NombreTaxaEspecie" Type="varchar" MaxLength="50" />
+    <Property Name="NombreComunP" Type="varchar" MaxLength="50" />
+    <Property Name="NombreAutor" Type="varchar" MaxLength="50" />
+    <Property Name="AnioPublicacion" Type="int" />
+    <Property Name="AutoriaEditor" Type="varchar" MaxLength="50" />
+    <Property Name="Endemica" Type="bit" />
+    <Property Name="numeroRegistros" Type="int" />
+    <Property Name="rutaSalida" Type="varchar" MaxLength="255" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="UsuarioModificacion" Type="nchar" MaxLength="10" />
+    <Property Name="NombreVisitante" Type="varchar" MaxLength="50" />
+    <Property Name="InstitucionVisitante" Type="varchar" MaxLength="50" />
+    <Property Name="Categoria" Type="varchar" MaxLength="255" />
+    <Property Name="RutaDescarga" Type="varchar" MaxLength="255" />
+    <Property Name="TipoReporte" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="divisiongeopolitica">
+    <Key>
+      <PropertyRef Name="IdDivisionGeopolitica" />
+    </Key>
+    <Property Name="IdDivisionGeopolitica" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="IdDivisionGeopoliticaPadre" Type="bigint" />
+    <Property Name="IdCatalogo" Type="bigint" Nullable="false" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="divisiongeopoliticacatalogoap">
+    <Key>
+      <PropertyRef Name="IdDivisionGeopoliticaCatalogoAP" />
+    </Key>
+    <Property Name="IdDivisionGeopoliticaCatalogoAP" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdDivisionGeopolitica" Type="bigint" Nullable="false" />
+    <Property Name="IdCatalogo" Type="bigint" Nullable="false" />
+    <Property Name="FechaModificacion" Type="date" />
+  </EntityType>
+  <EntityType Name="enlacerelacionado">
+    <Key>
+      <PropertyRef Name="IdEnlaceRelacionado" />
+    </Key>
+    <Property Name="IdEnlaceRelacionado" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEspecie" Type="bigint" Nullable="false" />
+    <Property Name="Enlace" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="TextoEnlace" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Borrado" Type="bit" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="especie">
+    <Key>
+      <PropertyRef Name="IdEspecie" />
+    </Key>
+    <Property Name="IdEspecie" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdTaxa" Type="bigint" Nullable="false" />
+    <Property Name="Etimologia" Type="nvarchar(max)" />
+    <Property Name="Taxonomia" Type="nvarchar(max)" />
+    <Property Name="HabitatBiologia" Type="nvarchar(max)" />
+    <Property Name="Dieta" Type="nvarchar(max)" />
+    <Property Name="Reproduccion" Type="nvarchar(max)" />
+    <Property Name="InformacionAdicional" Type="nvarchar(max)" />
+    <Property Name="ComentarioEstatusPoblacional" Type="nvarchar(max)" />
+    <Property Name="Distribucion" Type="nvarchar(max)" />
+    <Property Name="DistribucionGlobal" Type="nvarchar(max)" />
+    <Property Name="ObservacionZonaAltitudinal" Type="nvarchar(max)" />
+    <Property Name="RangoAltitudinal" Type="nvarchar(max)" />
+    <Property Name="ReferenciaAreaProtegida" Type="nvarchar(max)" />
+    <Property Name="Compilador" Type="nvarchar(max)" />
+    <Property Name="FechaCompilacion" Type="date" />
+    <Property Name="AutoriaCompilador" Type="nvarchar(max)" />
+    <Property Name="Editor" Type="nvarchar" MaxLength="100" />
+    <Property Name="FechaEdicion" Type="date" />
+    <Property Name="AutoriaEditor" Type="nvarchar" MaxLength="100" />
+    <Property Name="FechaActualizacion" Type="date" />
+    <Property Name="Agradecimiento" Type="nvarchar(max)" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+    <Property Name="Categoria" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="especiecatalogo">
+    <Key>
+      <PropertyRef Name="IdEspecieCatalogo" />
+    </Key>
+    <Property Name="IdEspecieCatalogo" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEspecie" Type="bigint" Nullable="false" />
+    <Property Name="IdCatalogo" Type="bigint" Nullable="false" />
+    <Property Name="Borrado" Type="tinyint" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+    <Property Name="Criterio" Type="varchar" MaxLength="255" />
+    <Property Name="PublicacionListaRoja" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="especielocalidad">
+    <Key>
+      <PropertyRef Name="IdEspecieLocalidad" />
+    </Key>
+    <Property Name="IdEspecieLocalidad" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEspecie" Type="bigint" Nullable="false" />
+    <Property Name="IdLocalidad" Type="bigint" Nullable="false" />
+    <Property Name="Principal" Type="tinyint" Nullable="false" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="especimen">
+    <Key>
+      <PropertyRef Name="IdEspecimen" />
+    </Key>
+    <Property Name="IdEspecimen" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Qcaz" Type="varchar" MaxLength="255" />
+    <Property Name="SC" Type="nvarchar" MaxLength="255" />
+    <Property Name="IdTaxaWeb" Type="bigint" />
+    <Property Name="Orden" Type="nvarchar" MaxLength="255" />
+    <Property Name="Familia" Type="nvarchar" MaxLength="255" />
+    <Property Name="Genero" Type="nvarchar" MaxLength="255" />
+    <Property Name="Especie" Type="nvarchar" MaxLength="255" />
+    <Property Name="TaxaCuestion" Type="nvarchar" MaxLength="255" />
+    <Property Name="AnoColeccion" Type="int" />
+    <Property Name="Pais" Type="nvarchar" MaxLength="255" />
+    <Property Name="Provincia" Type="nvarchar" MaxLength="255" />
+    <Property Name="Localidad" Type="nvarchar" MaxLength="255" />
+    <Property Name="LatGeo" Type="decimal" Scale="12" />
+    <Property Name="LonGeo" Type="decimal" Scale="12" />
+    <Property Name="Tejidos" Type="bit" />
+    <Property Name="Tipo" Type="nvarchar" MaxLength="255" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="UsuarioModificacion" Type="nvarchar" MaxLength="255" />
+    <Property Name="FuenteCoordenadas" Type="nvarchar" MaxLength="255" />
+    <Property Name="QcazSN" Type="bit" />
+    <Property Name="FuenteRegistro" Type="nvarchar" MaxLength="255" />
+    <Property Name="IdPublicacion" Type="bigint" />
+    <Property Name="ObservacionesGeoreferenciacion" Type="nvarchar" MaxLength="255" />
+    <Property Name="ObservacionesGenerales" Type="nvarchar(max)" />
+    <Property Name="Nueva" Type="bit" />
+  </EntityType>
+  <EntityType Name="ImagenEspecimen">
+    <Key>
+      <PropertyRef Name="IdImagenEspecimen" />
+    </Key>
+    <Property Name="IdImagenEspecimen" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Titulo" Type="nvarchar" MaxLength="300" />
+    <Property Name="NombreArchivo" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="IdEspecimen" Type="bigint" />
+    <Property Name="Descripcion" Type="nvarchar(max)" />
+    <Property Name="IdCatalogo" Type="bigint" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="localidad">
+    <Key>
+      <PropertyRef Name="IdLocalidad" />
+    </Key>
+    <Property Name="IdLocalidad" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdDivisionGeopolitica" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="NombreVerbatim" Type="varchar(max)" />
+    <Property Name="Latitud" Type="decimal" Precision="10" Scale="5" />
+    <Property Name="Longitud" Type="decimal" Precision="10" Scale="5" />
+    <Property Name="UtmN" Type="nvarchar" MaxLength="30" />
+    <Property Name="UtmE" Type="nvarchar" MaxLength="30" />
+    <Property Name="Altura" Type="varchar" MaxLength="25" />
+    <Property Name="Extension" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="ErrorMaximaDistancia" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="FechaUltimoCambio" Type="datetime" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="localidadcatalogo">
+    <Key>
+      <PropertyRef Name="IdLocalidadCatalogo" />
+    </Key>
+    <Property Name="IdLocalidadCatalogo" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdLocalidad" Type="bigint" Nullable="false" />
+    <Property Name="IdCatalogo" Type="bigint" Nullable="false" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="mammalia">
+    <Key>
+      <PropertyRef Name="IdMammalia" />
+    </Key>
+    <Property Name="IdMammalia" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEspecie" Type="bigint" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar(max)" />
+    <Property Name="Diagnosis" Type="nvarchar(max)" />
+    <Property Name="Morfometria" Type="nvarchar(max)" />
+    <Property Name="Movimientos" Type="nvarchar(max)" />
+    <Property Name="ListaRojaCriterios" Type="nvarchar" MaxLength="255" />
+    <Property Name="Sinonimia" Type="nvarchar(max)" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MENU">
+    <Key>
+      <PropertyRef Name="IDMENU" />
+    </Key>
+    <Property Name="IDMENU" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBREMENU" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="FECHAMODIFICACION" Type="date" />
+    <Property Name="USUARIOMODIFICACION" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="multimedia">
+    <Key>
+      <PropertyRef Name="IdMultimedia" />
+    </Key>
+    <Property Name="IdMultimedia" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Titulo" Type="nvarchar" MaxLength="30" />
+    <Property Name="NombreArchivo" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="IdTaxa" Type="bigint" Nullable="false" />
+    <Property Name="IdTipo" Type="bigint" />
+    <Property Name="Descripcion" Type="nvarchar(max)" />
+    <Property Name="Principal" Type="bit" />
+    <Property Name="Descarga" Type="bit" Nullable="false" />
+    <Property Name="IdCatalogo" Type="bigint" Nullable="false" />
+    <Property Name="EnlaceExterno" Type="bit" Nullable="false" />
+    <Property Name="Borrado" Type="bit" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="FuenteBibliografica" Type="nvarchar" MaxLength="100" />
+    <Property Name="Duracion_ms" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaInicial_KHz" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaMaxima_KHz" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaFinal_KHz" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaMinima_KHz" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaPuntoInflexion_KHz" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaMaximaEnergia_KHz" Type="nvarchar" MaxLength="100" />
+    <Property Name="AnchoBanda_KHz" Type="nvarchar" MaxLength="100" />
+    <Property Name="Software" Type="nvarchar" MaxLength="100" />
+    <Property Name="Grabadora" Type="nvarchar" MaxLength="100" />
+    <Property Name="Detector" Type="nvarchar" MaxLength="100" />
+    <Property Name="SituacionGrabacion" Type="nvarchar" MaxLength="100" />
+    <Property Name="Responsable" Type="varchar" MaxLength="100" />
+    <Property Name="DuracionMinima" Type="nvarchar" MaxLength="100" />
+    <Property Name="DuracionMaxima" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaInicialMinima" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaInicialMaxima" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaMaximaMinima" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaMaximaMaxima" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaFinalMinima" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaFinalMaxima" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaMinimaMinima" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaMinimaMaxima" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaPuntoInflexionMinima" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaPuntoInflexionMaxima" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaCaracteristica" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaCaracteristicaMinima" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaCaracteristicaMaxima" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaMaximaEnergiaMinima" Type="nvarchar" MaxLength="100" />
+    <Property Name="FrecuenciaMaximaEnergiaMaxima" Type="nvarchar" MaxLength="100" />
+    <Property Name="AnchoBandaMinima" Type="nvarchar" MaxLength="100" />
+    <Property Name="AnchoBandaMaxima" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="nombrecomun">
+    <Key>
+      <PropertyRef Name="IdNombreComun" />
+    </Key>
+    <Property Name="IdNombreComun" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdTaxa" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Comentario" Type="nvarchar" MaxLength="255" />
+    <Property Name="Principal" Type="bit" Nullable="false" />
+    <Property Name="Orden" Type="int" />
+    <Property Name="IdPublicacion" Type="bigint" />
+    <Property Name="Borrado" Type="bit" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="nombrecomuncatalogo">
+    <Key>
+      <PropertyRef Name="IdNombreComunCatalogo" />
+    </Key>
+    <Property Name="IdNombreComunCatalogo" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdNombreComun" Type="bigint" Nullable="false" />
+    <Property Name="IdCatalogo" Type="bigint" Nullable="false" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+    <Property Name="Criterio" Type="varchar" MaxLength="255" />
+    <Property Name="PublicacionListaRoja" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="nombrecomunpublicacion">
+    <Key>
+      <PropertyRef Name="idnombrecomunpublicacion" />
+    </Key>
+    <Property Name="idnombrecomunpublicacion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idnombrecomun" Type="bigint" Nullable="false" />
+    <Property Name="idpublicacion" Type="bigint" Nullable="false" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ordenamientotaxa">
+    <Key>
+      <PropertyRef Name="IdOrdenamientoTaxa" />
+    </Key>
+    <Property Name="IdOrdenamientoTaxa" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Posicion" Type="int" Nullable="false" />
+    <Property Name="IdTaxa" Type="bigint" Nullable="false" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PERFIL">
+    <Key>
+      <PropertyRef Name="IDPERFIL" />
+    </Key>
+    <Property Name="IDPERFIL" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PERFILNOMBRE" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="FECHAMODIFICACION" Type="date" />
+    <Property Name="USUARIOMODIFICACION" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PERMISOSPERFIL">
+    <Key>
+      <PropertyRef Name="IDPERMISOSPERFIL" />
+      <PropertyRef Name="IDPERFIL" />
+      <PropertyRef Name="IDMENU" />
+    </Key>
+    <Property Name="IDPERMISOSPERFIL" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IDPERFIL" Type="bigint" Nullable="false" />
+    <Property Name="IDMENU" Type="bigint" Nullable="false" />
+    <Property Name="SELECCIONARPERFIL" Type="bit" />
+    <Property Name="INSERTARPERFIL" Type="bit" />
+    <Property Name="ACTUALIZARPERFIL" Type="bit" />
+    <Property Name="ELIMINARPERFIL" Type="bit" />
+    <Property Name="FECHAMODIFICACION" Type="date" />
+    <Property Name="USUARIOMODIFICACION" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="publicacion">
+    <Key>
+      <PropertyRef Name="IdPublicacion" />
+    </Key>
+    <Property Name="IdPublicacion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Titulo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TituloSecundario" Type="nvarchar(max)" />
+    <Property Name="Editor" Type="bit" Nullable="false" />
+    <Property Name="Editorial" Type="nvarchar(max)" />
+    <Property Name="Volumen" Type="nvarchar" MaxLength="80" />
+    <Property Name="Numero" Type="nvarchar" MaxLength="20" />
+    <Property Name="Pagina" Type="nvarchar" MaxLength="80" />
+    <Property Name="PalabrasClave" Type="nvarchar" MaxLength="255" />
+    <Property Name="Resumen" Type="nvarchar(max)" />
+    <Property Name="Observaciones" Type="nvarchar(max)" />
+    <Property Name="FechaCreacionRegistro" Type="datetime2" Precision="0" />
+    <Property Name="PublicacionDelQcaz" Type="bit" Nullable="false" />
+    <Property Name="PublicaEnNoticias" Type="bit" Nullable="false" />
+    <Property Name="PublicaEnWeb" Type="bit" Nullable="false" />
+    <Property Name="PublicaEnCV" Type="bit" Nullable="false" />
+    <Property Name="IdExterno" Type="int" />
+    <Property Name="FuenteIdExterno" Type="nvarchar" MaxLength="255" />
+    <Property Name="Publisher" Type="nvarchar(max)" />
+    <Property Name="PubLocalidad" Type="nvarchar(max)" />
+    <Property Name="Cita" Type="nvarchar(max)" />
+    <Property Name="CitaCorta" Type="nvarchar(max)" />
+    <Property Name="Borrado" Type="bit" />
+    <Property Name="Ano" Type="int" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="publicacionano_bak">
+    <Key>
+      <PropertyRef Name="IdPublicacionAno" />
+    </Key>
+    <Property Name="IdPublicacionAno" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Ano" Type="bigint" Nullable="false" />
+    <Property Name="IdPublicacion" Type="bigint" Nullable="false" />
+    <Property Name="FechaModificacion" Type="date" />
+  </EntityType>
+  <EntityType Name="publicacionautor">
+    <Key>
+      <PropertyRef Name="IdPublicacionAutor" />
+    </Key>
+    <Property Name="IdPublicacionAutor" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdPublicacion" Type="bigint" Nullable="false" />
+    <Property Name="IdAutor" Type="bigint" Nullable="false" />
+    <Property Name="OrdenAutor" Type="int" Nullable="false" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="publicacioncatalogo">
+    <Key>
+      <PropertyRef Name="IdPublicacionCatalogo" />
+    </Key>
+    <Property Name="IdPublicacionCatalogo" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdPublicacion" Type="bigint" Nullable="false" />
+    <Property Name="IdCatalogo" Type="bigint" Nullable="false" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+    <Property Name="Criterio" Type="varchar" MaxLength="255" />
+    <Property Name="PublicacionListaRoja" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="publicacionenlace">
+    <Key>
+      <PropertyRef Name="IdPublicacionEnlace" />
+    </Key>
+    <Property Name="IdPublicacionEnlace" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreArchivo" Type="nvarchar" MaxLength="1000" />
+    <Property Name="EnlaceArchivo" Type="nvarchar" MaxLength="1000" />
+    <Property Name="TextoEnlace" Type="nvarchar" MaxLength="1000" />
+    <Property Name="IdPublicacion" Type="bigint" Nullable="false" />
+    <Property Name="IdCatalogo" Type="bigint" Nullable="false" />
+    <Property Name="Descarga" Type="bit" Nullable="false" />
+    <Property Name="Thumbnail" Type="nvarchar" MaxLength="255" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="reptilia">
+    <Key>
+      <PropertyRef Name="IdReptilia" />
+    </Key>
+    <Property Name="IdReptilia" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEspecie" Type="bigint" Nullable="false" />
+    <Property Name="Sinonimia" Type="nvarchar(max)" />
+    <Property Name="Identificacion" Type="nvarchar(max)" />
+    <Property Name="ColorEnVida" Type="nvarchar(max)" />
+    <Property Name="ColorEnPreservacion" Type="nvarchar(max)" />
+    <Property Name="Morfometria" Type="nvarchar(max)" />
+    <Property Name="LongitudTotalMacho" Type="nvarchar" MaxLength="255" />
+    <Property Name="SVLMacho" Type="nvarchar" MaxLength="100" />
+    <Property Name="ReferenciaSVLMacho" Type="nvarchar" MaxLength="255" />
+    <Property Name="LongitudTotalHembra" Type="nvarchar" MaxLength="255" />
+    <Property Name="SVLHembra" Type="nvarchar" MaxLength="100" />
+    <Property Name="ReferenciaSVLHembra" Type="nvarchar" MaxLength="255" />
+    <Property Name="LepidosisLagartija" Type="nvarchar(max)" />
+    <Property Name="ComentarioTamano" Type="nvarchar(max)" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="reptiliacatalogo">
+    <Key>
+      <PropertyRef Name="IdReptiliaCatalogo" />
+    </Key>
+    <Property Name="IdReptiliaCatalogo" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdReptilia" Type="bigint" Nullable="false" />
+    <Property Name="IdCatalogo" Type="bigint" Nullable="false" />
+    <Property Name="Valor" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Borrado" Type="tinyint" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+    <Property Name="criterio" Type="varchar" MaxLength="255" />
+    <Property Name="PublicacionListaRoja" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="sinonimo">
+    <Key>
+      <PropertyRef Name="IdSinonimo" />
+    </Key>
+    <Property Name="IdSinonimo" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdTaxa" Type="bigint" Nullable="false" />
+    <Property Name="IdTaxaSinonimo" Type="bigint" Nullable="false" />
+    <Property Name="IdPublicacion" Type="bigint" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="taxa">
+    <Key>
+      <PropertyRef Name="IdTaxa" />
+    </Key>
+    <Property Name="IdTaxa" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="NombreCorto" Type="nvarchar" MaxLength="255" />
+    <Property Name="EnEcuador" Type="bit" Nullable="false" />
+    <Property Name="Endemica" Type="bit" Nullable="false" />
+    <Property Name="IdTaxaPadre" Type="bigint" />
+    <Property Name="IdCatalogo" Type="bigint" Nullable="false" />
+    <Property Name="PublicarEnWeb" Type="bit" Nullable="false" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+    <Property Name="IdPublicacionReporte" Type="bigint" />
+    <Property Name="Ano" Type="int" />
+  </EntityType>
+  <EntityType Name="taxaaudio">
+    <Key>
+      <PropertyRef Name="IdTaxaAudio" />
+    </Key>
+    <Property Name="IdTaxaAudio" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdTaxa" Type="bigint" Nullable="false" />
+    <Property Name="IdAudio" Type="bigint" Nullable="false" />
+    <Property Name="IdCatalogo" Type="bigint" Nullable="false" />
+    <Property Name="PublicaEnWeb" Type="tinyint" Nullable="false" />
+    <Property Name="OrdenPresentacion" Type="tinyint" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="taxapublicacion">
+    <Key>
+      <PropertyRef Name="IdTaxaPublicacion" />
+    </Key>
+    <Property Name="IdTaxaPublicacion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdTaxa" Type="bigint" Nullable="false" />
+    <Property Name="IdPublicacion" Type="bigint" Nullable="false" />
+    <Property Name="Principal" Type="bit" Nullable="false" />
+    <Property Name="Borrado" Type="bit" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="taxavideo">
+    <Key>
+      <PropertyRef Name="IdTaxaVideo" />
+    </Key>
+    <Property Name="IdTaxaVideo" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdTaxa" Type="bigint" Nullable="false" />
+    <Property Name="IdVideo" Type="bigint" Nullable="false" />
+    <Property Name="Principal" Type="tinyint" Nullable="false" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tipo">
+    <Key>
+      <PropertyRef Name="IdTipo" />
+    </Key>
+    <Property Name="IdTipo" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdTaxa" Type="bigint" Nullable="false" />
+    <Property Name="NumeroMuseo" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Medidas" Type="nvarchar(max)" />
+    <Property Name="Comentario" Type="nvarchar(max)" />
+    <Property Name="Principal" Type="bit" Nullable="false" />
+    <Property Name="IdCatalogo" Type="bigint" Nullable="false" />
+    <Property Name="IdLocalidad" Type="bigint" />
+    <Property Name="Borrado" Type="bit" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+    <Property Name="LocalidadDescripcion" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tipocatalogo">
+    <Key>
+      <PropertyRef Name="IdTipoCatalogo" />
+    </Key>
+    <Property Name="IdTipoCatalogo" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="255" />
+    <Property Name="IdTipoCatalogoPadre" Type="bigint" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="USUARIO">
+    <Key>
+      <PropertyRef Name="IDUSUARIO" />
+    </Key>
+    <Property Name="IDUSUARIO" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IDPERFIL" Type="bigint" />
+    <Property Name="USERUSUARIO" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PASSWORDUSUARIO" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="RETRYPASSWORDUSUARIO" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="NOMBREUSUARIO" Type="varchar" MaxLength="50" />
+    <Property Name="APELLIDOUSUARIO" Type="varchar" MaxLength="50" />
+    <Property Name="DIRECCIONUSUARIO" Type="varchar" MaxLength="50" />
+    <Property Name="TELEFONOUSUARIO" Type="varchar" MaxLength="50" />
+    <Property Name="EMAILUSUARIO" Type="varchar" MaxLength="50" />
+    <Property Name="FECHAMODIFICACION" Type="date" />
+    <Property Name="USUARIOMODIFICACION" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="verificacionlocalidad">
+    <Key>
+      <PropertyRef Name="IdVerificacionLocalidad" />
+    </Key>
+    <Property Name="IdVerificacionLocalidad" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdLocalidad" Type="bigint" Nullable="false" />
+    <Property Name="IdPersonal" Type="bigint" Nullable="false" />
+    <Property Name="Fecha" Type="date" Nullable="false" />
+    <Property Name="Observacion" Type="varchar" MaxLength="255" />
+    <Property Name="Fuente" Type="varchar" MaxLength="255" />
+    <Property Name="FechaModificacion" Type="date" />
+    <Property Name="UsuarioModificacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__especimen__IdPub__07420643">
+    <End Role="publicacion" Type="BiologiaBdRelacionesModel.Store.publicacion" Multiplicity="0..1" />
+    <End Role="especimen" Type="BiologiaBdRelacionesModel.Store.especimen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="publicacion">
+        <PropertyRef Name="IdPublicacion" />
+      </Principal>
+      <Dependent Role="especimen">
+        <PropertyRef Name="IdPublicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_amphibia_especie">
+    <End Role="especie" Type="BiologiaBdRelacionesModel.Store.especie" Multiplicity="1" />
+    <End Role="amphibia" Type="BiologiaBdRelacionesModel.Store.amphibia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="especie">
+        <PropertyRef Name="IdEspecie" />
+      </Principal>
+      <Dependent Role="amphibia">
+        <PropertyRef Name="IdEspecie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_autorbiografia_autor">
+    <End Role="autor" Type="BiologiaBdRelacionesModel.Store.autor" Multiplicity="1" />
+    <End Role="autorbiografia" Type="BiologiaBdRelacionesModel.Store.autorbiografia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="autor">
+        <PropertyRef Name="IdAutor" />
+      </Principal>
+      <Dependent Role="autorbiografia">
+        <PropertyRef Name="IdAutor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_autorbiografia_biografia">
+    <End Role="biografia" Type="BiologiaBdRelacionesModel.Store.biografia" Multiplicity="1" />
+    <End Role="autorbiografia" Type="BiologiaBdRelacionesModel.Store.autorbiografia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="biografia">
+        <PropertyRef Name="IdBiografia" />
+      </Principal>
+      <Dependent Role="autorbiografia">
+        <PropertyRef Name="IdBiografia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_aves_especie">
+    <End Role="especie" Type="BiologiaBdRelacionesModel.Store.especie" Multiplicity="1" />
+    <End Role="aves" Type="BiologiaBdRelacionesModel.Store.aves" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="especie">
+        <PropertyRef Name="IdEspecie" />
+      </Principal>
+      <Dependent Role="aves">
+        <PropertyRef Name="IdEspecie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_catalogo_tipocatalogo">
+    <End Role="tipocatalogo" Type="BiologiaBdRelacionesModel.Store.tipocatalogo" Multiplicity="1" />
+    <End Role="catalogo" Type="BiologiaBdRelacionesModel.Store.catalogo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipocatalogo">
+        <PropertyRef Name="IdTipoCatalogo" />
+      </Principal>
+      <Dependent Role="catalogo">
+        <PropertyRef Name="IdTipoCatalogo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_enlacerelacionado_especie">
+    <End Role="especie" Type="BiologiaBdRelacionesModel.Store.especie" Multiplicity="1" />
+    <End Role="enlacerelacionado" Type="BiologiaBdRelacionesModel.Store.enlacerelacionado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="especie">
+        <PropertyRef Name="IdEspecie" />
+      </Principal>
+      <Dependent Role="enlacerelacionado">
+        <PropertyRef Name="IdEspecie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_especie_taxa">
+    <End Role="taxa" Type="BiologiaBdRelacionesModel.Store.taxa" Multiplicity="1" />
+    <End Role="especie" Type="BiologiaBdRelacionesModel.Store.especie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="taxa">
+        <PropertyRef Name="IdTaxa" />
+      </Principal>
+      <Dependent Role="especie">
+        <PropertyRef Name="IdTaxa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_especiecatalogo_catalogo">
+    <End Role="catalogo" Type="BiologiaBdRelacionesModel.Store.catalogo" Multiplicity="1" />
+    <End Role="especiecatalogo" Type="BiologiaBdRelacionesModel.Store.especiecatalogo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="catalogo">
+        <PropertyRef Name="IdCatalogo" />
+      </Principal>
+      <Dependent Role="especiecatalogo">
+        <PropertyRef Name="IdCatalogo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_especiecatalogo_especie">
+    <End Role="especie" Type="BiologiaBdRelacionesModel.Store.especie" Multiplicity="1" />
+    <End Role="especiecatalogo" Type="BiologiaBdRelacionesModel.Store.especiecatalogo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="especie">
+        <PropertyRef Name="IdEspecie" />
+      </Principal>
+      <Dependent Role="especiecatalogo">
+        <PropertyRef Name="IdEspecie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_especimen_taxa">
+    <End Role="taxa" Type="BiologiaBdRelacionesModel.Store.taxa" Multiplicity="0..1" />
+    <End Role="especimen" Type="BiologiaBdRelacionesModel.Store.especimen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="taxa">
+        <PropertyRef Name="IdTaxa" />
+      </Principal>
+      <Dependent Role="especimen">
+        <PropertyRef Name="IdTaxaWeb" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ImagenEspecimen_catalogo">
+    <End Role="catalogo" Type="BiologiaBdRelacionesModel.Store.catalogo" Multiplicity="0..1" />
+    <End Role="ImagenEspecimen" Type="BiologiaBdRelacionesModel.Store.ImagenEspecimen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="catalogo">
+        <PropertyRef Name="IdCatalogo" />
+      </Principal>
+      <Dependent Role="ImagenEspecimen">
+        <PropertyRef Name="IdCatalogo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ImagenEspecimen_especimen">
+    <End Role="especimen" Type="BiologiaBdRelacionesModel.Store.especimen" Multiplicity="0..1" />
+    <End Role="ImagenEspecimen" Type="BiologiaBdRelacionesModel.Store.ImagenEspecimen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="especimen">
+        <PropertyRef Name="IdEspecimen" />
+      </Principal>
+      <Dependent Role="ImagenEspecimen">
+        <PropertyRef Name="IdEspecimen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mammalia_especie">
+    <End Role="especie" Type="BiologiaBdRelacionesModel.Store.especie" Multiplicity="1" />
+    <End Role="mammalia" Type="BiologiaBdRelacionesModel.Store.mammalia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="especie">
+        <PropertyRef Name="IdEspecie" />
+      </Principal>
+      <Dependent Role="mammalia">
+        <PropertyRef Name="IdEspecie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_multimedia_catalogo">
+    <End Role="catalogo" Type="BiologiaBdRelacionesModel.Store.catalogo" Multiplicity="1" />
+    <End Role="multimedia" Type="BiologiaBdRelacionesModel.Store.multimedia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="catalogo">
+        <PropertyRef Name="IdCatalogo" />
+      </Principal>
+      <Dependent Role="multimedia">
+        <PropertyRef Name="IdCatalogo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_multimedia_taxa">
+    <End Role="taxa" Type="BiologiaBdRelacionesModel.Store.taxa" Multiplicity="1" />
+    <End Role="multimedia" Type="BiologiaBdRelacionesModel.Store.multimedia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="taxa">
+        <PropertyRef Name="IdTaxa" />
+      </Principal>
+      <Dependent Role="multimedia">
+        <PropertyRef Name="IdTaxa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_multimedia_tipo">
+    <End Role="tipo" Type="BiologiaBdRelacionesModel.Store.tipo" Multiplicity="0..1" />
+    <End Role="multimedia" Type="BiologiaBdRelacionesModel.Store.multimedia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo">
+        <PropertyRef Name="IdTipo" />
+      </Principal>
+      <Dependent Role="multimedia">
+        <PropertyRef Name="IdTipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_nombrecomun_publicacion">
+    <End Role="publicacion" Type="BiologiaBdRelacionesModel.Store.publicacion" Multiplicity="0..1" />
+    <End Role="nombrecomun" Type="BiologiaBdRelacionesModel.Store.nombrecomun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="publicacion">
+        <PropertyRef Name="IdPublicacion" />
+      </Principal>
+      <Dependent Role="nombrecomun">
+        <PropertyRef Name="IdPublicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_nombrecomun_taxa">
+    <End Role="taxa" Type="BiologiaBdRelacionesModel.Store.taxa" Multiplicity="1" />
+    <End Role="nombrecomun" Type="BiologiaBdRelacionesModel.Store.nombrecomun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="taxa">
+        <PropertyRef Name="IdTaxa" />
+      </Principal>
+      <Dependent Role="nombrecomun">
+        <PropertyRef Name="IdTaxa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_nombrecomuncatalogo_catalogo">
+    <End Role="catalogo" Type="BiologiaBdRelacionesModel.Store.catalogo" Multiplicity="1" />
+    <End Role="nombrecomuncatalogo" Type="BiologiaBdRelacionesModel.Store.nombrecomuncatalogo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="catalogo">
+        <PropertyRef Name="IdCatalogo" />
+      </Principal>
+      <Dependent Role="nombrecomuncatalogo">
+        <PropertyRef Name="IdCatalogo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_nombrecomuncatalogo_nombrecomun">
+    <End Role="nombrecomun" Type="BiologiaBdRelacionesModel.Store.nombrecomun" Multiplicity="1" />
+    <End Role="nombrecomuncatalogo" Type="BiologiaBdRelacionesModel.Store.nombrecomuncatalogo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="nombrecomun">
+        <PropertyRef Name="IdNombreComun" />
+      </Principal>
+      <Dependent Role="nombrecomuncatalogo">
+        <PropertyRef Name="IdNombreComun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_nombrecomunpublicacion_nombrecomun">
+    <End Role="nombrecomun" Type="BiologiaBdRelacionesModel.Store.nombrecomun" Multiplicity="1" />
+    <End Role="nombrecomunpublicacion" Type="BiologiaBdRelacionesModel.Store.nombrecomunpublicacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="nombrecomun">
+        <PropertyRef Name="IdNombreComun" />
+      </Principal>
+      <Dependent Role="nombrecomunpublicacion">
+        <PropertyRef Name="idnombrecomun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_nombrecomunpublicacion_publicacion">
+    <End Role="publicacion" Type="BiologiaBdRelacionesModel.Store.publicacion" Multiplicity="1" />
+    <End Role="nombrecomunpublicacion" Type="BiologiaBdRelacionesModel.Store.nombrecomunpublicacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="publicacion">
+        <PropertyRef Name="IdPublicacion" />
+      </Principal>
+      <Dependent Role="nombrecomunpublicacion">
+        <PropertyRef Name="idpublicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ordenamientotaxa_taxa">
+    <End Role="taxa" Type="BiologiaBdRelacionesModel.Store.taxa" Multiplicity="1" />
+    <End Role="ordenamientotaxa" Type="BiologiaBdRelacionesModel.Store.ordenamientotaxa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="taxa">
+        <PropertyRef Name="IdTaxa" />
+      </Principal>
+      <Dependent Role="ordenamientotaxa">
+        <PropertyRef Name="IdTaxa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PERMISOS_RELATIONS_MENU">
+    <End Role="MENU" Type="BiologiaBdRelacionesModel.Store.MENU" Multiplicity="1" />
+    <End Role="PERMISOSPERFIL" Type="BiologiaBdRelacionesModel.Store.PERMISOSPERFIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MENU">
+        <PropertyRef Name="IDMENU" />
+      </Principal>
+      <Dependent Role="PERMISOSPERFIL">
+        <PropertyRef Name="IDMENU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PERMISOS_RELATIONS_PERFIL">
+    <End Role="PERFIL" Type="BiologiaBdRelacionesModel.Store.PERFIL" Multiplicity="1" />
+    <End Role="PERMISOSPERFIL" Type="BiologiaBdRelacionesModel.Store.PERMISOSPERFIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PERFIL">
+        <PropertyRef Name="IDPERFIL" />
+      </Principal>
+      <Dependent Role="PERMISOSPERFIL">
+        <PropertyRef Name="IDPERFIL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_publicacionautor_autor">
+    <End Role="autor" Type="BiologiaBdRelacionesModel.Store.autor" Multiplicity="1" />
+    <End Role="publicacionautor" Type="BiologiaBdRelacionesModel.Store.publicacionautor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="autor">
+        <PropertyRef Name="IdAutor" />
+      </Principal>
+      <Dependent Role="publicacionautor">
+        <PropertyRef Name="IdAutor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_publicacionautor_publicacion">
+    <End Role="publicacion" Type="BiologiaBdRelacionesModel.Store.publicacion" Multiplicity="1" />
+    <End Role="publicacionautor" Type="BiologiaBdRelacionesModel.Store.publicacionautor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="publicacion">
+        <PropertyRef Name="IdPublicacion" />
+      </Principal>
+      <Dependent Role="publicacionautor">
+        <PropertyRef Name="IdPublicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_publicacioncatalogo_catalogo">
+    <End Role="catalogo" Type="BiologiaBdRelacionesModel.Store.catalogo" Multiplicity="1" />
+    <End Role="publicacioncatalogo" Type="BiologiaBdRelacionesModel.Store.publicacioncatalogo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="catalogo">
+        <PropertyRef Name="IdCatalogo" />
+      </Principal>
+      <Dependent Role="publicacioncatalogo">
+        <PropertyRef Name="IdCatalogo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_publicacioncatalogo_publicacion">
+    <End Role="publicacion" Type="BiologiaBdRelacionesModel.Store.publicacion" Multiplicity="1" />
+    <End Role="publicacioncatalogo" Type="BiologiaBdRelacionesModel.Store.publicacioncatalogo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="publicacion">
+        <PropertyRef Name="IdPublicacion" />
+      </Principal>
+      <Dependent Role="publicacioncatalogo">
+        <PropertyRef Name="IdPublicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_publicacionenlace_catalogo">
+    <End Role="catalogo" Type="BiologiaBdRelacionesModel.Store.catalogo" Multiplicity="1" />
+    <End Role="publicacionenlace" Type="BiologiaBdRelacionesModel.Store.publicacionenlace" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="catalogo">
+        <PropertyRef Name="IdCatalogo" />
+      </Principal>
+      <Dependent Role="publicacionenlace">
+        <PropertyRef Name="IdCatalogo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_publicacionenlace_publicacion">
+    <End Role="publicacion" Type="BiologiaBdRelacionesModel.Store.publicacion" Multiplicity="1" />
+    <End Role="publicacionenlace" Type="BiologiaBdRelacionesModel.Store.publicacionenlace" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="publicacion">
+        <PropertyRef Name="IdPublicacion" />
+      </Principal>
+      <Dependent Role="publicacionenlace">
+        <PropertyRef Name="IdPublicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_reptilia_especie">
+    <End Role="especie" Type="BiologiaBdRelacionesModel.Store.especie" Multiplicity="1" />
+    <End Role="reptilia" Type="BiologiaBdRelacionesModel.Store.reptilia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="especie">
+        <PropertyRef Name="IdEspecie" />
+      </Principal>
+      <Dependent Role="reptilia">
+        <PropertyRef Name="IdEspecie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_reptiliacatalogo_catalogo">
+    <End Role="catalogo" Type="BiologiaBdRelacionesModel.Store.catalogo" Multiplicity="1" />
+    <End Role="reptiliacatalogo" Type="BiologiaBdRelacionesModel.Store.reptiliacatalogo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="catalogo">
+        <PropertyRef Name="IdCatalogo" />
+      </Principal>
+      <Dependent Role="reptiliacatalogo">
+        <PropertyRef Name="IdCatalogo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_reptiliacatalogo_reptilia">
+    <End Role="reptilia" Type="BiologiaBdRelacionesModel.Store.reptilia" Multiplicity="1" />
+    <End Role="reptiliacatalogo" Type="BiologiaBdRelacionesModel.Store.reptiliacatalogo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="reptilia">
+        <PropertyRef Name="IdReptilia" />
+      </Principal>
+      <Dependent Role="reptiliacatalogo">
+        <PropertyRef Name="IdReptilia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sinonimo_publicacion">
+    <End Role="publicacion" Type="BiologiaBdRelacionesModel.Store.publicacion" Multiplicity="0..1" />
+    <End Role="sinonimo" Type="BiologiaBdRelacionesModel.Store.sinonimo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="publicacion">
+        <PropertyRef Name="IdPublicacion" />
+      </Principal>
+      <Dependent Role="sinonimo">
+        <PropertyRef Name="IdPublicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sinonimo_taxa">
+    <End Role="taxa" Type="BiologiaBdRelacionesModel.Store.taxa" Multiplicity="1" />
+    <End Role="sinonimo" Type="BiologiaBdRelacionesModel.Store.sinonimo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="taxa">
+        <PropertyRef Name="IdTaxa" />
+      </Principal>
+      <Dependent Role="sinonimo">
+        <PropertyRef Name="IdTaxa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_taxa_taxa">
+    <End Role="taxa" Type="BiologiaBdRelacionesModel.Store.taxa" Multiplicity="0..1" />
+    <End Role="taxa1" Type="BiologiaBdRelacionesModel.Store.taxa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="taxa">
+        <PropertyRef Name="IdTaxa" />
+      </Principal>
+      <Dependent Role="taxa1">
+        <PropertyRef Name="IdTaxaPadre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_taxapublicacion_publicacion">
+    <End Role="publicacion" Type="BiologiaBdRelacionesModel.Store.publicacion" Multiplicity="1" />
+    <End Role="taxapublicacion" Type="BiologiaBdRelacionesModel.Store.taxapublicacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="publicacion">
+        <PropertyRef Name="IdPublicacion" />
+      </Principal>
+      <Dependent Role="taxapublicacion">
+        <PropertyRef Name="IdPublicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_taxapublicacion_taxa">
+    <End Role="taxa" Type="BiologiaBdRelacionesModel.Store.taxa" Multiplicity="1" />
+    <End Role="taxapublicacion" Type="BiologiaBdRelacionesModel.Store.taxapublicacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="taxa">
+        <PropertyRef Name="IdTaxa" />
+      </Principal>
+      <Dependent Role="taxapublicacion">
+        <PropertyRef Name="IdTaxa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tipo_taxa">
+    <End Role="taxa" Type="BiologiaBdRelacionesModel.Store.taxa" Multiplicity="1" />
+    <End Role="tipo" Type="BiologiaBdRelacionesModel.Store.tipo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="taxa">
+        <PropertyRef Name="IdTaxa" />
+      </Principal>
+      <Dependent Role="tipo">
+        <PropertyRef Name="IdTaxa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tipocatalogo_tipocatalogo">
+    <End Role="tipocatalogo" Type="BiologiaBdRelacionesModel.Store.tipocatalogo" Multiplicity="0..1" />
+    <End Role="tipocatalogo1" Type="BiologiaBdRelacionesModel.Store.tipocatalogo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipocatalogo">
+        <PropertyRef Name="IdTipoCatalogo" />
+      </Principal>
+      <Dependent Role="tipocatalogo1">
+        <PropertyRef Name="IdTipoCatalogoPadre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USUARIO_RELATIONS_PERFIL">
+    <End Role="PERFIL" Type="BiologiaBdRelacionesModel.Store.PERFIL" Multiplicity="0..1" />
+    <End Role="USUARIO" Type="BiologiaBdRelacionesModel.Store.USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PERFIL">
+        <PropertyRef Name="IDPERFIL" />
+      </Principal>
+      <Dependent Role="USUARIO">
+        <PropertyRef Name="IDPERFIL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SeleccionarTaxaEspeciePorIdTaxa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="iIdTaxa" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="SeleccionarTaxaEspeciePorIdTaxaSP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="iIdTaxa" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="SeleccionarTaxaEspeciePorIdTaxaSPFinal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="iIdTaxa" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="SeleccionarTaxaEspeciePorIdTaxaSPFinalFinal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="iIdTaxa" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="SeleccionarTaxaEspeciePorIdTaxaSPSP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="iIdTaxa" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="SeleccionarTaxaPorId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="iIdTaxa" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="SeleccionarTaxas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SeleccionarTaxasAmphibiaSP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

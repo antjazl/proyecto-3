@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AccesoDatos" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AccesoDatos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOftaxa">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="taxa" nillable="true" type="tns:taxa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftaxa" nillable="true" type="tns:ArrayOftaxa" />
+  <xs:complexType name="taxa">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ano" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="EnEcuador" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Endemica" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="IdPublicacionReporte" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTaxa" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTaxaPadre" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCorto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PublicarEnWeb" type="xs:boolean" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="especies" nillable="true" type="tns:ArrayOfespecie" />
+      <xs:element minOccurs="0" name="especimen" nillable="true" type="tns:ArrayOfespeciman" />
+      <xs:element minOccurs="0" name="multimedias" nillable="true" type="tns:ArrayOfmultimedia" />
+      <xs:element minOccurs="0" name="nombrecomuns" nillable="true" type="tns:ArrayOfnombrecomun" />
+      <xs:element minOccurs="0" name="ordenamientotaxas" nillable="true" type="tns:ArrayOfordenamientotaxa" />
+      <xs:element minOccurs="0" name="sinonimoes" nillable="true" type="tns:ArrayOfsinonimo" />
+      <xs:element minOccurs="0" name="taxa1" nillable="true" type="tns:ArrayOftaxa" />
+      <xs:element minOccurs="0" name="taxa2" nillable="true" type="tns:taxa" />
+      <xs:element minOccurs="0" name="taxapublicacions" nillable="true" type="tns:ArrayOftaxapublicacion" />
+      <xs:element minOccurs="0" name="tipoes" nillable="true" type="tns:ArrayOftipo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="taxa" nillable="true" type="tns:taxa" />
+  <xs:complexType name="ArrayOfespecie">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="especie" nillable="true" type="tns:especie" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfespecie" nillable="true" type="tns:ArrayOfespecie" />
+  <xs:complexType name="especie">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Agradecimiento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AutoriaCompilador" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AutoriaEditor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Categoria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ComentarioEstatusPoblacional" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Compilador" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Dieta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Distribucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DistribucionGlobal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Editor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Etimologia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaActualizacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaCompilacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaEdicion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="HabitatBiologia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdEspecie" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTaxa" type="xs:long" />
+      <xs:element minOccurs="0" name="InformacionAdicional" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ObservacionZonaAltitudinal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RangoAltitudinal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReferenciaAreaProtegida" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reproduccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Taxonomia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="amphibias" nillable="true" type="tns:ArrayOfamphibia" />
+      <xs:element minOccurs="0" name="aves" nillable="true" type="tns:ArrayOfave" />
+      <xs:element minOccurs="0" name="enlacerelacionadoes" nillable="true" type="tns:ArrayOfenlacerelacionado" />
+      <xs:element minOccurs="0" name="especiecatalogoes" nillable="true" type="tns:ArrayOfespeciecatalogo" />
+      <xs:element minOccurs="0" name="mammalias" nillable="true" type="tns:ArrayOfmammalia" />
+      <xs:element minOccurs="0" name="reptilias" nillable="true" type="tns:ArrayOfreptilia" />
+      <xs:element minOccurs="0" name="taxa" nillable="true" type="tns:taxa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="especie" nillable="true" type="tns:especie" />
+  <xs:complexType name="ArrayOfamphibia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="amphibia" nillable="true" type="tns:amphibia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfamphibia" nillable="true" type="tns:ArrayOfamphibia" />
+  <xs:complexType name="amphibia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Canto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ColorEnPreservacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ColorEnVida" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Comportamiento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Diagnosis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdAmphibia" type="xs:long" />
+      <xs:element minOccurs="0" name="IdEspecie" type="xs:long" />
+      <xs:element minOccurs="0" name="Identificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Larva" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Morfometria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReferenciaSVLHembra" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReferenciaSVLMacho" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SVLHembra" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SVLMacho" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sinonimia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="especie" nillable="true" type="tns:especie" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="amphibia" nillable="true" type="tns:amphibia" />
+  <xs:complexType name="ArrayOfave">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ave" nillable="true" type="tns:ave" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfave" nillable="true" type="tns:ArrayOfave" />
+  <xs:complexType name="ave">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CasiEndemica" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ComentarioTaxonomia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DistribucionSubespecies" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdAves" type="xs:long" />
+      <xs:element minOccurs="0" name="IdEspecie" type="xs:long" />
+      <xs:element minOccurs="0" name="Identificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Movimiento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NotaPresenciaProvincia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaxonomiaRidgelyGreenfield" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="especie" nillable="true" type="tns:especie" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ave" nillable="true" type="tns:ave" />
+  <xs:complexType name="ArrayOfenlacerelacionado">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="enlacerelacionado" nillable="true" type="tns:enlacerelacionado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfenlacerelacionado" nillable="true" type="tns:ArrayOfenlacerelacionado" />
+  <xs:complexType name="enlacerelacionado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Borrado" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Enlace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdEnlaceRelacionado" type="xs:long" />
+      <xs:element minOccurs="0" name="IdEspecie" type="xs:long" />
+      <xs:element minOccurs="0" name="TextoEnlace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="especie" nillable="true" type="tns:especie" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="enlacerelacionado" nillable="true" type="tns:enlacerelacionado" />
+  <xs:complexType name="ArrayOfespeciecatalogo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="especiecatalogo" nillable="true" type="tns:especiecatalogo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfespeciecatalogo" nillable="true" type="tns:ArrayOfespeciecatalogo" />
+  <xs:complexType name="especiecatalogo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Borrado" nillable="true" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Criterio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="IdEspecie" type="xs:long" />
+      <xs:element minOccurs="0" name="IdEspecieCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="PublicacionListaRoja" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="catalogo" nillable="true" type="tns:catalogo" />
+      <xs:element minOccurs="0" name="especie" nillable="true" type="tns:especie" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="especiecatalogo" nillable="true" type="tns:especiecatalogo" />
+  <xs:complexType name="catalogo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTipoCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="ImagenEspecimen" nillable="true" type="tns:ArrayOfImagenEspeciman" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sigla" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="especiecatalogoes" nillable="true" type="tns:ArrayOfespeciecatalogo" />
+      <xs:element minOccurs="0" name="multimedias" nillable="true" type="tns:ArrayOfmultimedia" />
+      <xs:element minOccurs="0" name="nombrecomuncatalogoes" nillable="true" type="tns:ArrayOfnombrecomuncatalogo" />
+      <xs:element minOccurs="0" name="publicacioncatalogoes" nillable="true" type="tns:ArrayOfpublicacioncatalogo" />
+      <xs:element minOccurs="0" name="publicacionenlaces" nillable="true" type="tns:ArrayOfpublicacionenlace" />
+      <xs:element minOccurs="0" name="reptiliacatalogoes" nillable="true" type="tns:ArrayOfreptiliacatalogo" />
+      <xs:element minOccurs="0" name="tipocatalogo" nillable="true" type="tns:tipocatalogo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="catalogo" nillable="true" type="tns:catalogo" />
+  <xs:complexType name="ArrayOfImagenEspeciman">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ImagenEspeciman" nillable="true" type="tns:ImagenEspeciman" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfImagenEspeciman" nillable="true" type="tns:ArrayOfImagenEspeciman" />
+  <xs:complexType name="ImagenEspeciman">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdCatalogo" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="IdEspecimen" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="IdImagenEspecimen" type="xs:long" />
+      <xs:element minOccurs="0" name="NombreArchivo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="catalogo" nillable="true" type="tns:catalogo" />
+      <xs:element minOccurs="0" name="especiman" nillable="true" type="tns:especiman" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ImagenEspeciman" nillable="true" type="tns:ImagenEspeciman" />
+  <xs:complexType name="especiman">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnoColeccion" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Especie" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Familia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FuenteCoordenadas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FuenteRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Genero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdEspecimen" type="xs:long" />
+      <xs:element minOccurs="0" name="IdPublicacion" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTaxaWeb" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="ImagenEspecimen" nillable="true" type="tns:ArrayOfImagenEspeciman" />
+      <xs:element minOccurs="0" name="LatGeo" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Localidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LonGeo" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Nueva" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ObservacionesGenerales" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ObservacionesGeoreferenciacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Orden" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pais" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Provincia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Qcaz" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QcazSN" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaxaCuestion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tejidos" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="publicacion" nillable="true" type="tns:publicacion" />
+      <xs:element minOccurs="0" name="taxa" nillable="true" type="tns:taxa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="especiman" nillable="true" type="tns:especiman" />
+  <xs:complexType name="publicacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ano" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Borrado" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Cita" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CitaCorta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Editor" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Editorial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCreacionRegistro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FuenteIdExterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdExterno" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="IdPublicacion" type="xs:long" />
+      <xs:element minOccurs="0" name="Numero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Observaciones" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pagina" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PalabrasClave" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PubLocalidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PublicaEnCV" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PublicaEnNoticias" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PublicaEnWeb" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PublicacionDelQcaz" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Publisher" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Resumen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TituloSecundario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Volumen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="especimen" nillable="true" type="tns:ArrayOfespeciman" />
+      <xs:element minOccurs="0" name="nombrecomunpublicacions" nillable="true" type="tns:ArrayOfnombrecomunpublicacion" />
+      <xs:element minOccurs="0" name="nombrecomuns" nillable="true" type="tns:ArrayOfnombrecomun" />
+      <xs:element minOccurs="0" name="publicacionautors" nillable="true" type="tns:ArrayOfpublicacionautor" />
+      <xs:element minOccurs="0" name="publicacioncatalogoes" nillable="true" type="tns:ArrayOfpublicacioncatalogo" />
+      <xs:element minOccurs="0" name="publicacionenlaces" nillable="true" type="tns:ArrayOfpublicacionenlace" />
+      <xs:element minOccurs="0" name="sinonimoes" nillable="true" type="tns:ArrayOfsinonimo" />
+      <xs:element minOccurs="0" name="taxapublicacions" nillable="true" type="tns:ArrayOftaxapublicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="publicacion" nillable="true" type="tns:publicacion" />
+  <xs:complexType name="ArrayOfespeciman">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="especiman" nillable="true" type="tns:especiman" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfespeciman" nillable="true" type="tns:ArrayOfespeciman" />
+  <xs:complexType name="ArrayOfnombrecomunpublicacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="nombrecomunpublicacion" nillable="true" type="tns:nombrecomunpublicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfnombrecomunpublicacion" nillable="true" type="tns:ArrayOfnombrecomunpublicacion" />
+  <xs:complexType name="nombrecomunpublicacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idnombrecomun" type="xs:long" />
+      <xs:element minOccurs="0" name="idnombrecomunpublicacion" type="xs:long" />
+      <xs:element minOccurs="0" name="idpublicacion" type="xs:long" />
+      <xs:element minOccurs="0" name="nombrecomun" nillable="true" type="tns:nombrecomun" />
+      <xs:element minOccurs="0" name="publicacion" nillable="true" type="tns:publicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="nombrecomunpublicacion" nillable="true" type="tns:nombrecomunpublicacion" />
+  <xs:complexType name="nombrecomun">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Borrado" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Comentario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdNombreComun" type="xs:long" />
+      <xs:element minOccurs="0" name="IdPublicacion" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTaxa" type="xs:long" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Orden" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Principal" type="xs:boolean" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombrecomuncatalogoes" nillable="true" type="tns:ArrayOfnombrecomuncatalogo" />
+      <xs:element minOccurs="0" name="nombrecomunpublicacions" nillable="true" type="tns:ArrayOfnombrecomunpublicacion" />
+      <xs:element minOccurs="0" name="publicacion" nillable="true" type="tns:publicacion" />
+      <xs:element minOccurs="0" name="taxa" nillable="true" type="tns:taxa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="nombrecomun" nillable="true" type="tns:nombrecomun" />
+  <xs:complexType name="ArrayOfnombrecomuncatalogo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="nombrecomuncatalogo" nillable="true" type="tns:nombrecomuncatalogo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfnombrecomuncatalogo" nillable="true" type="tns:ArrayOfnombrecomuncatalogo" />
+  <xs:complexType name="nombrecomuncatalogo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Criterio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="IdNombreComun" type="xs:long" />
+      <xs:element minOccurs="0" name="IdNombreComunCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="PublicacionListaRoja" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="catalogo" nillable="true" type="tns:catalogo" />
+      <xs:element minOccurs="0" name="nombrecomun" nillable="true" type="tns:nombrecomun" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="nombrecomuncatalogo" nillable="true" type="tns:nombrecomuncatalogo" />
+  <xs:complexType name="ArrayOfnombrecomun">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="nombrecomun" nillable="true" type="tns:nombrecomun" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfnombrecomun" nillable="true" type="tns:ArrayOfnombrecomun" />
+  <xs:complexType name="ArrayOfpublicacionautor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacionautor" nillable="true" type="tns:publicacionautor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpublicacionautor" nillable="true" type="tns:ArrayOfpublicacionautor" />
+  <xs:complexType name="publicacionautor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdAutor" type="xs:long" />
+      <xs:element minOccurs="0" name="IdPublicacion" type="xs:long" />
+      <xs:element minOccurs="0" name="IdPublicacionAutor" type="xs:long" />
+      <xs:element minOccurs="0" name="OrdenAutor" type="xs:int" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="autor" nillable="true" type="tns:autor" />
+      <xs:element minOccurs="0" name="publicacion" nillable="true" type="tns:publicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="publicacionautor" nillable="true" type="tns:publicacionautor" />
+  <xs:complexType name="autor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Apellidos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnlaceBiografia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdAutor" type="xs:long" />
+      <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="autorbiografias" nillable="true" type="tns:ArrayOfautorbiografia" />
+      <xs:element minOccurs="0" name="publicacionautors" nillable="true" type="tns:ArrayOfpublicacionautor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="autor" nillable="true" type="tns:autor" />
+  <xs:complexType name="ArrayOfautorbiografia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="autorbiografia" nillable="true" type="tns:autorbiografia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfautorbiografia" nillable="true" type="tns:ArrayOfautorbiografia" />
+  <xs:complexType name="autorbiografia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdAutor" type="xs:long" />
+      <xs:element minOccurs="0" name="IdAutorBiografia" type="xs:long" />
+      <xs:element minOccurs="0" name="IdBiografia" type="xs:long" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="autor" nillable="true" type="tns:autor" />
+      <xs:element minOccurs="0" name="biografia" nillable="true" type="tns:biografia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="autorbiografia" nillable="true" type="tns:autorbiografia" />
+  <xs:complexType name="biografia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnoNacimiento" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="AsociacionesProfesionales" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CorreoElectronico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExperienciaLaboral" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdBiografia" type="xs:long" />
+      <xs:element minOccurs="0" name="InicioInteresEstudio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InteresInvestigacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LugarNacimiento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PosicionActual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PremiosReconocimientos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TitulosAcademicos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="autorbiografias" nillable="true" type="tns:ArrayOfautorbiografia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="biografia" nillable="true" type="tns:biografia" />
+  <xs:complexType name="ArrayOfpublicacioncatalogo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacioncatalogo" nillable="true" type="tns:publicacioncatalogo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpublicacioncatalogo" nillable="true" type="tns:ArrayOfpublicacioncatalogo" />
+  <xs:complexType name="publicacioncatalogo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Criterio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="IdPublicacion" type="xs:long" />
+      <xs:element minOccurs="0" name="IdPublicacionCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="PublicacionListaRoja" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="catalogo" nillable="true" type="tns:catalogo" />
+      <xs:element minOccurs="0" name="publicacion" nillable="true" type="tns:publicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="publicacioncatalogo" nillable="true" type="tns:publicacioncatalogo" />
+  <xs:complexType name="ArrayOfpublicacionenlace">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacionenlace" nillable="true" type="tns:publicacionenlace" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpublicacionenlace" nillable="true" type="tns:ArrayOfpublicacionenlace" />
+  <xs:complexType name="publicacionenlace">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descarga" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EnlaceArchivo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="IdPublicacion" type="xs:long" />
+      <xs:element minOccurs="0" name="IdPublicacionEnlace" type="xs:long" />
+      <xs:element minOccurs="0" name="NombreArchivo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TextoEnlace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Thumbnail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="catalogo" nillable="true" type="tns:catalogo" />
+      <xs:element minOccurs="0" name="publicacion" nillable="true" type="tns:publicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="publicacionenlace" nillable="true" type="tns:publicacionenlace" />
+  <xs:complexType name="ArrayOfsinonimo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="sinonimo" nillable="true" type="tns:sinonimo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfsinonimo" nillable="true" type="tns:ArrayOfsinonimo" />
+  <xs:complexType name="sinonimo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdPublicacion" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="IdSinonimo" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTaxa" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTaxaSinonimo" type="xs:long" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="publicacion" nillable="true" type="tns:publicacion" />
+      <xs:element minOccurs="0" name="taxa" nillable="true" type="tns:taxa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="sinonimo" nillable="true" type="tns:sinonimo" />
+  <xs:complexType name="ArrayOftaxapublicacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="taxapublicacion" nillable="true" type="tns:taxapublicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftaxapublicacion" nillable="true" type="tns:ArrayOftaxapublicacion" />
+  <xs:complexType name="taxapublicacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Borrado" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdPublicacion" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTaxa" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTaxaPublicacion" type="xs:long" />
+      <xs:element minOccurs="0" name="Principal" type="xs:boolean" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="publicacion" nillable="true" type="tns:publicacion" />
+      <xs:element minOccurs="0" name="taxa" nillable="true" type="tns:taxa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="taxapublicacion" nillable="true" type="tns:taxapublicacion" />
+  <xs:complexType name="ArrayOfmultimedia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="multimedia" nillable="true" type="tns:multimedia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfmultimedia" nillable="true" type="tns:ArrayOfmultimedia" />
+  <xs:complexType name="multimedia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnchoBandaMaxima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AnchoBandaMinima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AnchoBanda_KHz" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Borrado" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Descarga" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Detector" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DuracionMaxima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DuracionMinima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Duracion_ms" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnlaceExterno" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Fecha" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FrecuenciaCaracteristica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaCaracteristicaMaxima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaCaracteristicaMinima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaFinalMaxima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaFinalMinima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaFinal_KHz" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaInicialMaxima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaInicialMinima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaInicial_KHz" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaMaximaEnergiaMaxima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaMaximaEnergiaMinima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaMaximaEnergia_KHz" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaMaximaMaxima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaMaximaMinima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaMaxima_KHz" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaMinimaMaxima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaMinimaMinima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaMinima_KHz" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaPuntoInflexionMaxima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaPuntoInflexionMinima" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrecuenciaPuntoInflexion_KHz" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FuenteBibliografica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Grabadora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="IdMultimedia" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTaxa" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTipo" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="NombreArchivo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Principal" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Responsable" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SituacionGrabacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Software" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="catalogo" nillable="true" type="tns:catalogo" />
+      <xs:element minOccurs="0" name="taxa" nillable="true" type="tns:taxa" />
+      <xs:element minOccurs="0" name="tipo" nillable="true" type="tns:tipo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="multimedia" nillable="true" type="tns:multimedia" />
+  <xs:complexType name="tipo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Borrado" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Comentario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="IdLocalidad" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTaxa" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTipo" type="xs:long" />
+      <xs:element minOccurs="0" name="LocalidadDescripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Medidas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroMuseo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Principal" type="xs:boolean" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="multimedias" nillable="true" type="tns:ArrayOfmultimedia" />
+      <xs:element minOccurs="0" name="taxa" nillable="true" type="tns:taxa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tipo" nillable="true" type="tns:tipo" />
+  <xs:complexType name="ArrayOfreptiliacatalogo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="reptiliacatalogo" nillable="true" type="tns:reptiliacatalogo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfreptiliacatalogo" nillable="true" type="tns:ArrayOfreptiliacatalogo" />
+  <xs:complexType name="reptiliacatalogo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Borrado" nillable="true" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="IdReptilia" type="xs:long" />
+      <xs:element minOccurs="0" name="IdReptiliaCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="PublicacionListaRoja" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="catalogo" nillable="true" type="tns:catalogo" />
+      <xs:element minOccurs="0" name="criterio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reptilia" nillable="true" type="tns:reptilia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="reptiliacatalogo" nillable="true" type="tns:reptiliacatalogo" />
+  <xs:complexType name="reptilia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ColorEnPreservacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ColorEnVida" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ComentarioTamano" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdEspecie" type="xs:long" />
+      <xs:element minOccurs="0" name="IdReptilia" type="xs:long" />
+      <xs:element minOccurs="0" name="Identificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LepidosisLagartija" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LongitudTotalHembra" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LongitudTotalMacho" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Morfometria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReferenciaSVLHembra" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReferenciaSVLMacho" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SVLHembra" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SVLMacho" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sinonimia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="especie" nillable="true" type="tns:especie" />
+      <xs:element minOccurs="0" name="reptiliacatalogoes" nillable="true" type="tns:ArrayOfreptiliacatalogo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="reptilia" nillable="true" type="tns:reptilia" />
+  <xs:complexType name="tipocatalogo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdTipoCatalogo" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTipoCatalogoPadre" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="catalogoes" nillable="true" type="tns:ArrayOfcatalogo" />
+      <xs:element minOccurs="0" name="tipocatalogo1" nillable="true" type="tns:ArrayOftipocatalogo" />
+      <xs:element minOccurs="0" name="tipocatalogo2" nillable="true" type="tns:tipocatalogo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tipocatalogo" nillable="true" type="tns:tipocatalogo" />
+  <xs:complexType name="ArrayOfcatalogo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="catalogo" nillable="true" type="tns:catalogo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfcatalogo" nillable="true" type="tns:ArrayOfcatalogo" />
+  <xs:complexType name="ArrayOftipocatalogo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="tipocatalogo" nillable="true" type="tns:tipocatalogo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftipocatalogo" nillable="true" type="tns:ArrayOftipocatalogo" />
+  <xs:complexType name="ArrayOfmammalia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mammalia" nillable="true" type="tns:mammalia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfmammalia" nillable="true" type="tns:ArrayOfmammalia" />
+  <xs:complexType name="mammalia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Diagnosis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdEspecie" type="xs:long" />
+      <xs:element minOccurs="0" name="IdMammalia" type="xs:long" />
+      <xs:element minOccurs="0" name="ListaRojaCriterios" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Morfometria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Movimientos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sinonimia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="especie" nillable="true" type="tns:especie" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="mammalia" nillable="true" type="tns:mammalia" />
+  <xs:complexType name="ArrayOfreptilia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="reptilia" nillable="true" type="tns:reptilia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfreptilia" nillable="true" type="tns:ArrayOfreptilia" />
+  <xs:complexType name="ArrayOfordenamientotaxa">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ordenamientotaxa" nillable="true" type="tns:ordenamientotaxa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfordenamientotaxa" nillable="true" type="tns:ArrayOfordenamientotaxa" />
+  <xs:complexType name="ordenamientotaxa">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdOrdenamientoTaxa" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTaxa" type="xs:long" />
+      <xs:element minOccurs="0" name="Posicion" type="xs:int" />
+      <xs:element minOccurs="0" name="UsuarioModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="taxa" nillable="true" type="tns:taxa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ordenamientotaxa" nillable="true" type="tns:ordenamientotaxa" />
+  <xs:complexType name="ArrayOftipo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="tipo" nillable="true" type="tns:tipo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftipo" nillable="true" type="tns:ArrayOftipo" />
+  <xs:complexType name="taxacatalogo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescrpcionC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdTaxa" type="xs:long" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreArchivo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="taxacatalogo" nillable="true" type="tns:taxacatalogo" />
+  <xs:complexType name="ArrayOftaxapublica">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="taxapublica" nillable="true" type="tns:taxapublica" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftaxapublica" nillable="true" type="tns:ArrayOftaxapublica" />
+  <xs:complexType name="taxapublica">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cita" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Editor" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Editorial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdPublicacion" type="xs:long" />
+      <xs:element minOccurs="0" name="IdTaxa" type="xs:long" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Numero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TituloSecundario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Volumen" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="taxapublica" nillable="true" type="tns:taxapublica" />
+</xs:schema>

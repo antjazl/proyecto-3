@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceWCFTaxa" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50872/ServiceWCFTaxa.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50872/ServiceWCFTaxa.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50872/ServiceWCFTaxa.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AccesoDatos" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceWCFTaxa_seleccionarTaxa_InputMessage">
+    <wsdl:part name="parameters" element="tns:seleccionarTaxa" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCFTaxa_seleccionarTaxa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:seleccionarTaxaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCFTaxa_seleccionarTaxaPorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:seleccionarTaxaPorId" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCFTaxa_seleccionarTaxaPorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:seleccionarTaxaPorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCFTaxa_seleccionarFotoPrincipalPorIdTaxaExamen_InputMessage">
+    <wsdl:part name="parameters" element="tns:seleccionarFotoPrincipalPorIdTaxaExamen" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCFTaxa_seleccionarFotoPrincipalPorIdTaxaExamen_OutputMessage">
+    <wsdl:part name="parameters" element="tns:seleccionarFotoPrincipalPorIdTaxaExamenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCFTaxa_seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen_InputMessage">
+    <wsdl:part name="parameters" element="tns:seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCFTaxa_seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen_OutputMessage">
+    <wsdl:part name="parameters" element="tns:seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamenResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceWCFTaxa">
+    <wsdl:operation name="seleccionarTaxa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCFTaxa/seleccionarTaxa" message="tns:IServiceWCFTaxa_seleccionarTaxa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCFTaxa/seleccionarTaxaResponse" message="tns:IServiceWCFTaxa_seleccionarTaxa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarTaxaPorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCFTaxa/seleccionarTaxaPorId" message="tns:IServiceWCFTaxa_seleccionarTaxaPorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCFTaxa/seleccionarTaxaPorIdResponse" message="tns:IServiceWCFTaxa_seleccionarTaxaPorId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarFotoPrincipalPorIdTaxaExamen">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCFTaxa/seleccionarFotoPrincipalPorIdTaxaExamen" message="tns:IServiceWCFTaxa_seleccionarFotoPrincipalPorIdTaxaExamen_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCFTaxa/seleccionarFotoPrincipalPorIdTaxaExamenResponse" message="tns:IServiceWCFTaxa_seleccionarFotoPrincipalPorIdTaxaExamen_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCFTaxa/seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen" message="tns:IServiceWCFTaxa_seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCFTaxa/seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamenResponse" message="tns:IServiceWCFTaxa_seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceWCFTaxa" type="tns:IServiceWCFTaxa">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="seleccionarTaxa">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCFTaxa/seleccionarTaxa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarTaxaPorId">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCFTaxa/seleccionarTaxaPorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarFotoPrincipalPorIdTaxaExamen">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCFTaxa/seleccionarFotoPrincipalPorIdTaxaExamen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCFTaxa/seleccionarPublicacionesSeleccionarPublicacionesPorIdTaxaExamen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceWCFTaxa">
+    <wsdl:port name="BasicHttpBinding_IServiceWCFTaxa" binding="tns:BasicHttpBinding_IServiceWCFTaxa">
+      <soap:address location="http://localhost:50872/ServiceWCFTaxa.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

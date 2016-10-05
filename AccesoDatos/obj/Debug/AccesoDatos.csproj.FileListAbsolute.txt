@@ -1,0 +1,16 @@
+c:\users\estudiante\documents\visual studio 2012\Projects\Practica3\AccesoDatos\bin\Debug\AccesoDatos.dll.config
+c:\users\estudiante\documents\visual studio 2012\Projects\Practica3\AccesoDatos\bin\Debug\AccesoDatos.dll
+c:\users\estudiante\documents\visual studio 2012\Projects\Practica3\AccesoDatos\bin\Debug\AccesoDatos.pdb
+c:\users\estudiante\documents\visual studio 2012\Projects\Practica3\AccesoDatos\bin\Debug\EntityFramework.dll
+c:\users\estudiante\documents\visual studio 2012\Projects\Practica3\AccesoDatos\bin\Debug\EntityFramework.xml
+c:\users\estudiante\documents\visual studio 2012\Projects\Practica3\AccesoDatos\obj\Debug\AccesoDatos.csprojResolveAssemblyReference.cache
+c:\users\estudiante\documents\visual studio 2012\Projects\Practica3\AccesoDatos\obj\Debug\AccesoDatos.dll
+c:\users\estudiante\documents\visual studio 2012\Projects\Practica3\AccesoDatos\obj\Debug\AccesoDatos.pdb
+C:\Users\remigio\Documents\Practica3\AccesoDatos\bin\Debug\AccesoDatos.dll.config
+C:\Users\remigio\Documents\Practica3\AccesoDatos\bin\Debug\AccesoDatos.dll
+C:\Users\remigio\Documents\Practica3\AccesoDatos\bin\Debug\AccesoDatos.pdb
+C:\Users\remigio\Documents\Practica3\AccesoDatos\bin\Debug\EntityFramework.dll
+C:\Users\remigio\Documents\Practica3\AccesoDatos\bin\Debug\EntityFramework.xml
+C:\Users\remigio\Documents\Practica3\AccesoDatos\obj\Debug\AccesoDatos.dll
+C:\Users\remigio\Documents\Practica3\AccesoDatos\obj\Debug\AccesoDatos.pdb
+C:\Users\remigio\Documents\Practica3\AccesoDatos\obj\Debug\AccesoDatos.csprojResolveAssemblyReference.cache

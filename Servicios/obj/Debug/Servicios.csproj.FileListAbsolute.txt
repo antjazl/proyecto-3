@@ -1,0 +1,27 @@
+C:\Users\estudiante\Documents\Visual Studio 2012\Projects\Practica3\Servicios\bin\Servicios.dll
+C:\Users\estudiante\Documents\Visual Studio 2012\Projects\Practica3\Servicios\bin\Servicios.pdb
+C:\Users\estudiante\Documents\Visual Studio 2012\Projects\Practica3\Servicios\obj\Debug\Servicios.csprojResolveAssemblyReference.cache
+C:\Users\estudiante\Documents\Visual Studio 2012\Projects\Practica3\Servicios\obj\Debug\Servicios.dll
+C:\Users\estudiante\Documents\Visual Studio 2012\Projects\Practica3\Servicios\obj\Debug\Servicios.pdb
+C:\Users\estudiante\Documents\Visual Studio 2012\Projects\Practica3\Servicios\bin\AccesoDatos.dll
+C:\Users\estudiante\Documents\Visual Studio 2012\Projects\Practica3\Servicios\bin\Logica.dll
+C:\Users\estudiante\Documents\Visual Studio 2012\Projects\Practica3\Servicios\bin\EntityFramework.dll
+C:\Users\estudiante\Documents\Visual Studio 2012\Projects\Practica3\Servicios\bin\Datos.dll
+C:\Users\estudiante\Documents\Visual Studio 2012\Projects\Practica3\Servicios\bin\AccesoDatos.pdb
+C:\Users\estudiante\Documents\Visual Studio 2012\Projects\Practica3\Servicios\bin\Logica.pdb
+C:\Users\estudiante\Documents\Visual Studio 2012\Projects\Practica3\Servicios\bin\EntityFramework.xml
+C:\Users\estudiante\Documents\Visual Studio 2012\Projects\Practica3\Servicios\bin\Datos.pdb
+C:\Users\remigio\Documents\Practica3\Servicios\bin\Servicios.dll.config
+C:\Users\remigio\Documents\Practica3\Servicios\bin\Servicios.dll
+C:\Users\remigio\Documents\Practica3\Servicios\bin\Servicios.pdb
+C:\Users\remigio\Documents\Practica3\Servicios\bin\AccesoDatos.dll
+C:\Users\remigio\Documents\Practica3\Servicios\bin\Logica.dll
+C:\Users\remigio\Documents\Practica3\Servicios\bin\EntityFramework.dll
+C:\Users\remigio\Documents\Practica3\Servicios\bin\Datos.dll
+C:\Users\remigio\Documents\Practica3\Servicios\bin\AccesoDatos.pdb
+C:\Users\remigio\Documents\Practica3\Servicios\bin\Logica.pdb
+C:\Users\remigio\Documents\Practica3\Servicios\bin\EntityFramework.xml
+C:\Users\remigio\Documents\Practica3\Servicios\bin\Datos.pdb
+C:\Users\remigio\Documents\Practica3\Servicios\obj\Debug\Servicios.csprojResolveAssemblyReference.cache
+C:\Users\remigio\Documents\Practica3\Servicios\obj\Debug\Servicios.dll
+C:\Users\remigio\Documents\Practica3\Servicios\obj\Debug\Servicios.pdb

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8ffb926e-16d1-4ba4-9527-5e21e3f664df" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50872/ServiceWCFTaxa.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceWCFTaxa.xsd" MetadataType="Schema" ID="690d96a1-9213-457c-a9ac-a085cebbb4c9" SourceId="1" SourceUrl="http://localhost:50872/ServiceWCFTaxa.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceWCFTaxa1.xsd" MetadataType="Schema" ID="65770325-9220-4694-8723-25424a45d616" SourceId="1" SourceUrl="http://localhost:50872/ServiceWCFTaxa.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceWCFTaxa.wsdl" MetadataType="Wsdl" ID="918af491-0b0f-49cb-9940-66a2734e7a8f" SourceId="1" SourceUrl="http://localhost:50872/ServiceWCFTaxa.svc?wsdl" />
+    <MetadataFile FileName="ServiceWCFTaxa.disco" MetadataType="Disco" ID="e549d8c8-9e29-4df4-b09f-9e22b9bbb278" SourceId="1" SourceUrl="http://localhost:50872/ServiceWCFTaxa.svc?disco" />
+    <MetadataFile FileName="ServiceWCFTaxa2.xsd" MetadataType="Schema" ID="e896df85-1e8a-466a-8a60-690cc213ea16" SourceId="1" SourceUrl="http://localhost:50872/ServiceWCFTaxa.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
